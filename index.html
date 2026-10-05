@@ -12,6 +12,7 @@
  --green:#43d69b;--danger:#ff6678;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html,body{margin:0;min-height:100%;background:radial-gradient(circle at 75% -10%,#21153d 0,#0b0a0e 34%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 button,input,textarea{font:inherit}
 button{border:0;color:inherit;cursor:pointer}
@@ -83,13 +84,11 @@ header{display:flex;align-items:center;gap:12px;margin-bottom:18px;min-width:0}
 @media(max-width:560px){.tool-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:390px){.tool-grid{grid-template-columns:1fr}}
 
-.income-mini{display:inline-block;color:#b78cff;font-size:11px;margin-top:5px;font-weight:700}.income-box{background:linear-gradient(145deg,#121117,#17131f);border:1px solid #302d39;border-radius:18px;padding:16px;margin-top:16px;overflow:hidden}.income-head{display:grid;grid-template-columns:minmax(0,1fr);gap:13px}.income-total{font-size:24px;font-weight:850;margin-top:3px}.income-add{width:100%;min-height:46px;box-sizing:border-box;white-space:nowrap;justify-content:center;border:1px solid #6e3cc2;background:linear-gradient(135deg,#2b1d42,#4a247d);color:#f5efff;border-radius:14px;font-weight:750;box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}.income-add:hover{border-color:#9b68ee;background:linear-gradient(135deg,#35234f,#5a2d93)}.income-list{display:grid;gap:7px;margin-top:12px}.income-toggle{width:100%;margin-top:12px;display:flex;align-items:center;justify-content:space-between;text-align:left;background:#18151e;border:1px solid #302d39;border-radius:12px;padding:11px 12px;color:#e9e5ef}.income-toggle:hover{border-color:#4b4558}.income-toggle .chev{font-size:14px;color:#b78cff}.income-list.collapsed{display:none}.income-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-top:1px solid #292631}.income-row span{min-width:0;display:flex;flex-direction:column;gap:4px}.income-row small{color:#94909e;font-size:11px;overflow:hidden;text-overflow:ellipsis}.income-empty{padding-top:12px}.income-row .danger,.income-row .smallbtn{width:36px;height:36px;padding:0;border-radius:11px}.income-row>button{flex:0 0 36px}.range-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:520px){.range-grid{grid-template-columns:1fr}}.income-box .income-row strong{font-size:15px;color:#e9e5ef}
+.income-box{background:linear-gradient(145deg,#121117,#17131f);border:1px solid #302d39;border-radius:18px;padding:16px;margin-top:16px;overflow:hidden}.income-head{display:grid;grid-template-columns:minmax(0,1fr);gap:13px}.income-total{font-size:24px;font-weight:850;margin-top:3px}.income-add{width:100%;min-height:46px;box-sizing:border-box;white-space:nowrap;justify-content:center;border:1px solid #6e3cc2;background:linear-gradient(135deg,#2b1d42,#4a247d);color:#f5efff;border-radius:14px;font-weight:750;box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}.income-add:hover{border-color:#9b68ee;background:linear-gradient(135deg,#35234f,#5a2d93)}.income-list{display:grid;gap:7px;margin-top:12px}.income-toggle{width:100%;margin-top:12px;display:flex;align-items:center;justify-content:space-between;text-align:left;background:#18151e;border:1px solid #302d39;border-radius:12px;padding:11px 12px;color:#e9e5ef}.income-toggle:hover{border-color:#4b4558}.income-toggle .chev{font-size:14px;color:#b78cff}.income-list.collapsed{display:none}.income-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-top:1px solid #292631}.income-row span{min-width:0;display:flex;flex-direction:column;gap:4px}.income-row small{color:#94909e;font-size:11px;overflow:hidden;text-overflow:ellipsis}.income-empty{padding-top:12px}.income-row .danger,.income-row .smallbtn{width:36px;height:36px;padding:0;border-radius:11px}.income-row>button{flex:0 0 36px}.range-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:520px){.range-grid{grid-template-columns:1fr}}.income-box .income-row strong{font-size:15px;color:#e9e5ef}
 .profile-card{cursor:pointer;transition:transform .15s,border-color .15s,box-shadow .15s}.profile-card:hover{transform:translateY(-1px);border-color:#5d4a79;box-shadow:0 12px 32px #0005}.profile-card:focus-visible{outline:2px solid #9b68ff;outline-offset:2px}
 .detail-head{display:flex;align-items:center;gap:12px;margin-bottom:20px}.detail-avatar{width:58px;height:58px}.detail-title{font-size:22px;font-weight:800}.profile-sheet{padding:20px}.password-value{min-height:48px}.password-value button{background:#292630;border-radius:10px;padding:7px 10px;white-space:nowrap}.notes-box{background:#211f27;border:1px solid #36323f;border-radius:13px;padding:12px;color:#c5c0cc;white-space:pre-wrap;line-height:1.5}.notes-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;text-align:left;background:#18151e;border:1px solid #302d39;border-radius:12px;padding:11px 12px;color:#e9e5ef;margin-top:6px}.notes-toggle:hover{border-color:#4b4558}.notes-toggle .chev{font-size:14px;color:#b78cff}.notes-content{margin-top:10px}.notes-content.collapsed{display:none}
 
 .fullbtn{width:100%;margin-top:10px}.recovery-sheet{text-align:center}.recovery-icon{font-size:42px;margin-bottom:6px}.recovery-code{margin:18px 0;padding:16px;background:#100e15;border:1px solid #6f45aa;border-radius:15px;color:#d7c4ff;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:14px;line-height:1.8;word-break:break-all}.recovery-warning{background:#2d1d24;border:1px solid #58303b;color:#e9aeb8;border-radius:13px;padding:12px;text-align:left;font-size:12px;line-height:1.5}
-
-.recovery-manager{display:grid;gap:9px}.recovery-manager .settings-list{margin:0}.recovery-note{font-size:12px;color:#aaa6b6;line-height:1.5;margin:4px 2px 0}.recovery-key-preview{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#100e15;border:1px solid #4c376a;border-radius:12px;padding:12px;color:#d9c8ff;word-break:break-all}
 
 .favorite-btn{font-size:20px;color:#aaa3b2}.favorite-btn.is-favorite{color:#b978ff;background:#2b1d3d}.favorite-detail{color:#c58bff;border-color:#6e43a4}.pill .dot.off{background:#716b78}
 @media(max-height:760px){
@@ -133,42 +132,552 @@ header{display:flex;align-items:center;gap:12px;margin-bottom:18px;min-width:0}
 <div id="root"></div>
 <script>
 "use strict";
-const APP="BaseVault", DB="basevault-db", STORE="vault";
-let state={key:null,profiles:[],query:"",editing:null,profileView:null,filter:"all",incomeProfileId:null,billingMonth:null,billingStatus:{},incomeExpanded:{},notesExpanded:{},lastSavedAt:null,rangeFrom:"",rangeTo:"",autoLockMinutes:0,lastActivityAt:null};
-let autoLockTimer=null;
+/* =========================================================================
+   BaseVault – lokaler, verschlüsselter Account-Tresor (eine Datei, offline)
+   Speicher: IndexedDB · Krypto: Web Crypto (PBKDF2-SHA-256 + AES-256-GCM)
+   Gliederung: Konstanten · Helfer · Krypto · IndexedDB · Zustand · Auto-Sperre
+               Tresor · Persistenz · Aktionen · Auswertung · Ansichten · Events
+   ========================================================================= */
 
-const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const b64=a=>btoa(String.fromCharCode(...new Uint8Array(a)));
-const unb64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
-const rand=n=>crypto.getRandomValues(new Uint8Array(n));
-const hex=a=>Array.from(new Uint8Array(a),b=>b.toString(16).padStart(2,"0")).join("");
-const hexBytes=s=>{if(!/^[0-9a-fA-F]{64}$/.test(s))throw new Error("Ungültiger Wiederherstellungsschlüssel");const a=new Uint8Array(32);for(let i=0;i<64;i+=2)a[i/2]=parseInt(s.slice(i,i+2),16);return a};
-async function recoveryKey(code){return crypto.subtle.importKey("raw",hexBytes(code.trim().replace(/[\s-]/g,"")),"AES-GCM",false,["encrypt","decrypt"])}
-function formatRecoveryCode(code){return code.match(/.{1,8}/g)?.join("-")||code}
+/* --- 1. Konstanten ------------------------------------------------------- */
+const DB_NAME="basevault-db", STORE="vault", RECORD_KEY="vault", SCHEMA_VERSION=2;
+const PBKDF2_ITERATIONS=250000, MIN_PASSWORD_LENGTH=8;
+const PAYOUT_THRESHOLD=3000, PAYOUT_RATE_STANDARD=.2, PAYOUT_RATE_HIGH=.25;
+const AUTOLOCK_CHECK_MS=5000, AUTOLOCK_OPTIONS=[0,1,5,10,15,30,60];
+const NAV_ITEMS=[{id:"dashboard",icon:"▦",label:"Dashboard"},{id:"stats",icon:"▥",label:"Statistiken"},{id:"tools",icon:"⌁",label:"Tools"},{id:"settings",icon:"⚙",label:"Einstellungen"}];
+const FILTER_ITEMS=[{id:"all",icon:"▦",label:"Alle"},{id:"4based",icon:"♨",label:"4based"},{id:"favorites",icon:"☆",label:"Favoriten"},{id:"active",icon:"●",label:"Aktiv"}];
+const NAV_VIEWS=NAV_ITEMS.map(item=>item.id);
 
+/* --- 2. Helfer ---------------------------------------------------------- */
+const ESCAPES={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"};
+const esc=value=>String(value??"").replace(/[&<>"']/g,char=>ESCAPES[char]);
+const $=id=>document.getElementById(id);
+const fieldValue=id=>String($(id)?.value??"");
+const focusSoon=id=>requestAnimationFrame(()=>$(id)?.focus());
+const uid=()=>crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+Math.random().toString(36).slice(2);
+const toDateKey=date=>date.getFullYear()+"-"+String(date.getMonth()+1).padStart(2,"0")+"-"+String(date.getDate()).padStart(2,"0");
+const roundAmount=value=>Math.round(value*100)/100;
+const eurFormat=new Intl.NumberFormat("de-DE",{style:"currency",currency:"EUR"});
+const monthFormat=new Intl.DateTimeFormat("de-DE",{month:"long",year:"numeric"});
+const stampFormat=new Intl.DateTimeFormat("de-DE",{dateStyle:"short",timeStyle:"medium"});
+const money=value=>eurFormat.format(Number(value)||0);
+const download=(filename,text,type="text/plain;charset=utf-8")=>{
+ const url=URL.createObjectURL(new Blob([text],{type})),link=document.createElement("a");
+ link.href=url;link.download=filename;document.body.appendChild(link);link.click();link.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),1000);
+};
 
-function openDB(){return new Promise((res,rej)=>{const r=indexedDB.open(DB,1);r.onupgradeneeded=()=>r.result.createObjectStore(STORE);r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)})}
-async function dbGet(){const db=await openDB();return new Promise((res,rej)=>{const t=db.transaction(STORE,"readonly"),r=t.objectStore(STORE).get("vault");r.onsuccess=()=>res(r.result||null);r.onerror=()=>rej(r.error)})}
-async function dbPut(v){const db=await openDB();return new Promise((res,rej)=>{const t=db.transaction(STORE,"readwrite");t.objectStore(STORE).put(v,"vault");t.oncomplete=res;t.onerror=()=>rej(t.error)})}
-async function derive(pass,salt){return crypto.subtle.deriveKey({name:"PBKDF2",salt,iterations:250000,hash:"SHA-256"},await crypto.subtle.importKey("raw",new TextEncoder().encode(pass),"PBKDF2",false,["deriveKey"]),{name:"AES-GCM",length:256},false,["encrypt","decrypt"])}
-async function encrypt(key,data){const iv=rand(12),ct=await crypto.subtle.encrypt({name:"AES-GCM",iv},key,new TextEncoder().encode(JSON.stringify(data)));return {iv:b64(iv),data:b64(ct)}}
-async function decrypt(key,obj){const pt=await crypto.subtle.decrypt({name:"AES-GCM",iv:unb64(obj.iv)},key,unb64(obj.data));return JSON.parse(new TextDecoder().decode(pt))}
-function renderSetup(){document.getElementById("root").innerHTML=`<div class="setup"><div class="card"><div class="brand">🔐 BaseVault</div><h2>Dein lokaler Tresor</h2><p class="small">Lege ein Master-Passwort fest. Die Zugangsdaten werden lokal im Browser verschlüsselt gespeichert. Das Passwort selbst wird nicht gespeichert.</p><div class="field"><div class="label">Master-Passwort</div><input id="p1" class="input" type="password" autocomplete="new-password"></div><div class="field"><div class="label">Wiederholen</div><input id="p2" class="input" type="password" autocomplete="new-password"></div><button class="primary" onclick="createVault()">Tresor erstellen</button></div></div>`}
+/* --- 3. Krypto ---------------------------------------------------------- */
+const encoder=new TextEncoder(), decoder=new TextDecoder();
+const rand=length=>crypto.getRandomValues(new Uint8Array(length));
+const toBytes=value=>value instanceof Uint8Array?value:new Uint8Array(value);
+const hex=value=>{let out="";for(const byte of toBytes(value))out+=byte.toString(16).padStart(2,"0");return out};
+/* Chunkweise konvertieren – verhindert "Maximum call stack size exceeded" bei großen Tresoren. */
+const b64=value=>{const bytes=toBytes(value);let binary="";const CHUNK=0x8000;for(let i=0;i<bytes.length;i+=CHUNK)binary+=String.fromCharCode.apply(null,bytes.subarray(i,i+CHUNK));return btoa(binary)};
+const unb64=text=>Uint8Array.from(atob(text),char=>char.charCodeAt(0));
+function hexBytes(code){
+ const clean=String(code).trim().replace(/[\s-]/g,"");
+ if(!/^[0-9a-fA-F]{64}$/.test(clean))throw new Error("Ungültiger Wiederherstellungsschlüssel");
+ const bytes=new Uint8Array(32);
+ for(let i=0;i<32;i++)bytes[i]=parseInt(clean.slice(i*2,i*2+2),16);
+ return bytes;
+}
+const formatRecoveryCode=code=>code.match(/.{1,8}/g)?.join("-")||code;
+async function derive(pass,salt){
+ const material=await crypto.subtle.importKey("raw",encoder.encode(pass),"PBKDF2",false,["deriveKey"]);
+ return crypto.subtle.deriveKey({name:"PBKDF2",salt,iterations:PBKDF2_ITERATIONS,hash:"SHA-256"},material,{name:"AES-GCM",length:256},false,["encrypt","decrypt"]);
+}
+const recoveryKey=code=>crypto.subtle.importKey("raw",hexBytes(code),"AES-GCM",false,["encrypt","decrypt"]);
+async function encrypt(key,data){
+ const iv=rand(12);
+ return {iv:b64(iv),data:b64(await crypto.subtle.encrypt({name:"AES-GCM",iv},key,encoder.encode(JSON.stringify(data))))};
+}
+async function decrypt(key,box){
+ const plain=await crypto.subtle.decrypt({name:"AES-GCM",iv:unb64(box.iv)},key,unb64(box.data));
+ return JSON.parse(decoder.decode(plain));
+}
+
+/* --- 4. IndexedDB (eine Verbindung, wiederverwendet) -------------------- */
+let dbPromise=null;
+function openDB(){
+ if(!dbPromise)dbPromise=new Promise((resolve,reject)=>{
+  const request=indexedDB.open(DB_NAME,1);
+  request.onupgradeneeded=()=>request.result.createObjectStore(STORE);
+  request.onsuccess=()=>{const db=request.result;db.onversionchange=()=>db.close();resolve(db)};
+  request.onerror=()=>reject(request.error);
+ });
+ return dbPromise;
+}
+async function dbGet(){
+ const db=await openDB();
+ return new Promise((resolve,reject)=>{
+  const request=db.transaction(STORE,"readonly").objectStore(STORE).get(RECORD_KEY);
+  request.onsuccess=()=>resolve(request.result||null);
+  request.onerror=()=>reject(request.error);
+ });
+}
+async function dbPut(record){
+ const db=await openDB();
+ return new Promise((resolve,reject)=>{
+  const tx=db.transaction(STORE,"readwrite");
+  tx.objectStore(STORE).put(record,RECORD_KEY);
+  tx.oncomplete=()=>resolve();
+  tx.onerror=()=>reject(tx.error);
+  tx.onabort=()=>reject(tx.error||new Error("Transaktion abgebrochen"));
+ });
+}
+
+/* --- 5. Zustand --------------------------------------------------------- */
+const state={
+ key:null,                 // AES-Schlüssel (nur im Speicher)
+ record:null,              // verschlüsselter Datensatz aus IndexedDB
+ recoveryCode:null,        // Recovery-Key im Klartext (nur im Speicher)
+ profiles:[], query:"", editing:null, profileView:null, filter:"all",
+ incomeProfileId:null, billingMonth:null, billingStatus:{},
+ incomeExpanded:{}, notesExpanded:{},
+ lastSavedAt:null, rangeFrom:"", rangeTo:"", autoLockMinutes:0, lastActivityAt:null
+};
+let currentView="dashboard";
+
+/* --- 6. Auto-Sperre (Intervall statt Timer-Neuaufbau) ------------------- */
+let autoLockTimer=null, activityStamp=0;
+function autoLockLabel(){
+ const minutes=Number(state.autoLockMinutes)||0;
+ if(!minutes)return "Deaktiviert";
+ if(minutes<60)return `Nach ${minutes} Minute${minutes===1?"":"n"} Inaktivität`;
+ const hours=minutes/60;
+ return `Nach ${hours===1?"1 Stunde":hours+" Stunden"} Inaktivität`;
+}
+function autoLockMessage(){return `BaseVault wurde nach ${autoLockLabel().replace(/^Nach /,"")} automatisch gesperrt.`}
+function startAutoLock(){
+ stopAutoLock();
+ state.lastActivityAt=Date.now();
+ activityStamp=0;
+ if(!state.key||!Number(state.autoLockMinutes))return;
+ autoLockTimer=setInterval(checkAutoLock,AUTOLOCK_CHECK_MS);
+}
+function stopAutoLock(){if(autoLockTimer){clearInterval(autoLockTimer);autoLockTimer=null}}
+function checkAutoLock(){
+ if(!state.key)return;
+ const limit=Number(state.autoLockMinutes)*60000;
+ if(!limit)return;
+ if(Date.now()-(state.lastActivityAt||Date.now())>=limit)lockNow(true);
+}
+function noteActivity(){
+ if(!state.key||!Number(state.autoLockMinutes))return;
+ const now=Date.now();
+ if(now-activityStamp<1000)return;   // höchstens eine Aktualisierung pro Sekunde
+ activityStamp=now;
+ state.lastActivityAt=now;
+}
+
+/* --- 7. Tresor: erstellen, entsperren, sperren, Passwort/Recovery ------- */
+function normalizeProfiles(list){
+ return (Array.isArray(list)?list:[]).map(profile=>({...profile,favorite:!!profile.favorite,active:profile.active!==false,incomes:Array.isArray(profile.incomes)?profile.incomes:[]}));
+}
+async function readRecoveryCode(record,key){
+ if(!record?.wrappedRecoveryKey)return null;
+ try{return (await decrypt(key,record.wrappedRecoveryKey)).code}catch(error){return null}
+}
+function getRecoveryCode(){return state.recoveryCode}
+
+async function applyUnlocked(record,key,profiles,recoveryCode){
+ state.key=key;
+ state.record=record;
+ state.profiles=normalizeProfiles(profiles);
+ state.recoveryCode=recoveryCode===undefined?await readRecoveryCode(record,key):recoveryCode;
+ state.billingStatus=record.billingStatus||{};
+ state.lastSavedAt=record.lastSavedAt||null;
+ state.autoLockMinutes=Number(record.autoLockMinutes)||0;
+ state.query="";state.filter="all";state.editing=null;state.profileView=null;
+ state.incomeProfileId=null;state.billingMonth=null;state.rangeFrom="";state.rangeTo="";
+ state.incomeExpanded={};state.notesExpanded={};
+ startAutoLock();
+ renderApp();
+}
+
+function renderSetup(){
+ $("root").innerHTML=`<div class="setup"><div class="card"><div class="brand">🔐 BaseVault</div><h2>Dein lokaler Tresor</h2><p class="small">Lege ein Master-Passwort fest. Die Zugangsdaten werden lokal im Browser verschlüsselt gespeichert. Das Passwort selbst wird nicht gespeichert.</p><div class="field"><div class="label">Master-Passwort</div><input id="p1" class="input" type="password" autocomplete="new-password"></div><div class="field"><div class="label">Wiederholen</div><input id="p2" class="input" type="password" autocomplete="new-password"></div><button class="primary" data-act="create-vault">Tresor erstellen</button></div></div>`;
+}
 async function createVault(){
- const a=p1.value,b=p2.value;
- if(!a||a.length<8)return alert("Bitte mindestens 8 Zeichen verwenden.");
- if(a!==b)return alert("Die Passwörter stimmen nicht überein.");
- const salt=rand(16),key=await derive(a,salt);
- const recoveryCode=hex(rand(32));
- const rkey=await recoveryKey(recoveryCode);
- const empty=[];
- const record={v:2,salt:b64(salt),check:await encrypt(key,{ok:true}),payload:await encrypt(key,empty),recovery:await encrypt(rkey,empty),wrappedRecoveryKey:await encrypt(key,{code:recoveryCode}),autoLockMinutes:0};
+ const pass=fieldValue("p1"),repeat=fieldValue("p2");
+ if(!pass||pass.length<MIN_PASSWORD_LENGTH)return alert("Bitte mindestens 8 Zeichen verwenden.");
+ if(pass!==repeat)return alert("Die Passwörter stimmen nicht überein.");
+ const salt=rand(16),key=await derive(pass,salt),recoveryCode=hex(rand(32));
+ const record={
+  v:SCHEMA_VERSION,salt:b64(salt),
+  check:await encrypt(key,{ok:true}),
+  payload:await encrypt(key,[]),
+  recovery:await encrypt(await recoveryKey(recoveryCode),[]),
+  wrappedRecoveryKey:await encrypt(key,{code:recoveryCode}),
+  autoLockMinutes:0
+ };
  await dbPut(record);
- state.key=key;state.profiles=[];state.billingStatus={};state.lastSavedAt=Date.now();state.autoLockMinutes=0;startAutoLock();
+ state.key=key;state.record=record;state.recoveryCode=recoveryCode;state.profiles=[];
+ state.billingStatus={};state.lastSavedAt=Date.now();state.autoLockMinutes=0;
+ startAutoLock();
  alert("Tresor erstellt. Dein Wiederherstellungsschlüssel wird jetzt angezeigt. Speichere ihn sicher außerhalb der App.");
  showRecoveryCode(recoveryCode,true);
  renderApp();
 }
+
+function renderLogin(){
+ $("root").innerHTML=`<div class="setup"><div class="card"><div class="brand">🔐 BaseVault</div><h2>Tresor entsperren</h2><p class="small">Deine Daten bleiben verschlüsselt. Ohne Master-Passwort oder Wiederherstellungsschlüssel gibt es keinen Klartextzugriff.</p><div class="field"><div class="label">Master-Passwort</div><input id="loginpass" class="input" type="password" autocomplete="current-password" data-enter="unlock"></div><button class="primary" data-act="unlock">Entsperren</button><button class="ghost fullbtn" data-act="show-recovery-reset">Master-Passwort vergessen?</button></div></div>`;
+}
+async function unlock(){
+ try{
+  const record=await dbGet();
+  if(!record)throw new Error("Kein Tresor gefunden.");
+  const key=await derive(fieldValue("loginpass"),unb64(record.salt));
+  await decrypt(key,record.check);                       // Passwortprüfung
+  await applyUnlocked(record,key,await decrypt(key,record.payload));
+ }catch(error){
+  alert("Falsches Master-Passwort oder beschädigter Tresor.");
+ }
+}
+
+function showRecoveryReset(){
+ $("root").innerHTML=`<div class="setup"><div class="card"><div class="brand">🔐 BaseVault</div><h2>Master-Passwort zurücksetzen</h2><p class="small">Gib deinen 64-stelligen Wiederherstellungsschlüssel ein. Ohne ihn kann ein vergessenes Master-Passwort aus Sicherheitsgründen nicht zurückgesetzt werden.</p><div class="field"><div class="label">Wiederherstellungsschlüssel</div><input id="recoveryInput" class="input" placeholder="z. B. 7f2a... (64 Zeichen)" autocomplete="off"></div><div class="field"><div class="label">Neues Master-Passwort</div><input id="newMaster" class="input" type="password" autocomplete="new-password"></div><div class="field"><div class="label">Neues Passwort wiederholen</div><input id="newMaster2" class="input" type="password" autocomplete="new-password"></div><div class="actions"><button class="ghost" data-act="show-login">Abbrechen</button><button class="primary" data-act="reset-master">Master-Passwort setzen</button></div></div></div>`;
+}
+async function resetMaster(){
+ try{
+  const code=fieldValue("recoveryInput").replace(/[\s-]/g,"");
+  const pass=fieldValue("newMaster"),repeat=fieldValue("newMaster2");
+  if(!/^[0-9a-fA-F]{64}$/.test(code))return alert("Der Wiederherstellungsschlüssel muss 64 Hex-Zeichen enthalten.");
+  if(!pass||pass.length<MIN_PASSWORD_LENGTH)return alert("Das neue Master-Passwort muss mindestens 8 Zeichen haben.");
+  if(pass!==repeat)return alert("Die neuen Passwörter stimmen nicht überein.");
+  const record=await dbGet();
+  if(!record||!record.recovery)throw new Error("Für diesen Tresor ist kein Wiederherstellungsschlüssel eingerichtet.");
+  const profiles=await decrypt(await recoveryKey(code),record.recovery);
+  const salt=rand(16),key=await derive(pass,salt);
+  record.salt=b64(salt);
+  record.check=await encrypt(key,{ok:true});
+  record.payload=await encrypt(key,profiles);
+  record.wrappedRecoveryKey=await encrypt(key,{code});
+  record.lastSavedAt=Date.now();
+  record.autoLockMinutes=Number(record.autoLockMinutes)||0;
+  await dbPut(record);
+  alert("Master-Passwort wurde erfolgreich geändert.");
+  await applyUnlocked(record,key,profiles,code);
+ }catch(error){
+  alert("Wiederherstellung fehlgeschlagen. Prüfe den Schlüssel und versuche es erneut.");
+ }
+}
+
+function lockNow(auto=false){
+ stopAutoLock();
+ state.key=null;state.record=null;state.recoveryCode=null;state.profiles=[];
+ state.editing=null;state.profileView=null;state.incomeProfileId=null;state.lastActivityAt=null;
+ renderLogin();
+ if(auto)alert(autoLockMessage());
+}
+function lock(){lockNow(false)}
+
+/* --- 8. Persistenz ------------------------------------------------------ */
+const isRecoveryCode=value=>/^[0-9a-fA-F]{64}$/.test(String(value||"").replace(/[\s-]/g,""));
+async function persist(){
+ const record=state.record||(state.record=await dbGet());
+ if(!record)throw new Error("Kein Tresor gefunden.");
+ record.payload=await encrypt(state.key,state.profiles);
+ if(isRecoveryCode(state.recoveryCode)){
+  record.recovery=await encrypt(await recoveryKey(state.recoveryCode),state.profiles);
+ }
+ record.lastSavedAt=state.lastSavedAt=Date.now();
+ record.billingStatus=state.billingStatus||{};
+ record.autoLockMinutes=Number(state.autoLockMinutes)||0;
+ await dbPut(record);
+}
+
+/* --- 9. Aktionen: Profile ---------------------------------------------- */
+function setView(view){
+ currentView=view;
+ state.editing=null;
+ renderApp();
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+function activateNav(){
+ for(const view of NAV_VIEWS){
+  const element=$("nav-"+view);
+  if(element)element.classList.toggle("active",currentView===view);
+ }
+}
+function focusSearch(){
+ if(currentView!=="dashboard"){currentView="dashboard";state.editing=null;renderApp()}
+ const input=$("profileSearch");
+ if(input){input.focus();input.scrollIntoView({block:"center",behavior:"smooth"})}
+}
+function setFilter(filter){
+ state.filter=filter;
+ syncFilterButtons();
+ applyListFilter();
+}
+function syncFilterButtons(){
+ for(const button of document.querySelectorAll("[data-filter-btn]")){
+  button.classList.toggle("active",button.dataset.filterBtn===state.filter);
+ }
+}
+function matchesFilters(profile,query){
+ if(query&&!`${profile.name} ${profile.user}`.toLowerCase().includes(query))return false;
+ if(state.filter==="favorites"&&!profile.favorite)return false;
+ if(state.filter==="active"&&profile.active===false)return false;
+ return true;
+}
+function visibleProfileIds(){
+ const query=state.query.toLowerCase(),ids=new Set();
+ for(const profile of state.profiles)if(matchesFilters(profile,query))ids.add(profile.id);
+ return ids;
+}
+/* Suche/Filter blenden nur um – kein erneutes Rendern der gesamten Seite. */
+function applyListFilter(){
+ const list=$("profileList");
+ if(!list)return;
+ const ids=visibleProfileIds();
+ let shown=0;
+ for(const card of list.querySelectorAll(".profile-card")){
+  const visible=ids.has(card.dataset.id);
+  card.hidden=!visible;
+  if(visible)shown++;
+ }
+ const empty=$("emptyState");
+ if(!empty)return;
+ empty.hidden=shown>0;
+ if(shown)return;
+ const hasProfiles=state.profiles.length>0;
+ $("emptyTitle").textContent=hasProfiles?"Kein Profil gefunden.":"Noch keine Profile angelegt.";
+ $("emptyText").textContent=hasProfiles?"Versuch es mit einem anderen Suchbegriff.":"Füge jetzt deinen ersten 4based-Account hinzu und behalte alles sicher an einem Ort.";
+ $("emptyAction").hidden=hasProfiles;
+}
+function cardElement(id){
+ return [...document.querySelectorAll("#profileList .profile-card")].find(card=>card.dataset.id===id);
+}
+/* Einzelne Karte austauschen, statt die ganze App neu zu rendern. */
+function refreshCard(id){
+ if(currentView!=="dashboard"){renderApp();return}
+ const element=cardElement(id);
+ if(element){
+  const profile=state.profiles.find(item=>item.id===id);
+  if(profile)element.outerHTML=card(profile);
+ }
+ applyListFilter();
+}
+async function toggleFavorite(id,closeAfter=false){
+ const profile=state.profiles.find(item=>item.id===id);
+ if(!profile)return;
+ profile.favorite=!profile.favorite;
+ await persist();
+ if(closeAfter){closeProfile();return}
+ refreshCard(id);
+}
+async function toggleActive(id,closeAfter=false){
+ const profile=state.profiles.find(item=>item.id===id);
+ if(!profile)return;
+ profile.active=profile.active===false;
+ await persist();
+ if(closeAfter){closeProfile();return}
+ refreshCard(id);
+}
+function openEditor(id){
+ const profile=state.profiles.find(item=>item.id===id);
+ state.editing=profile?{...profile}:{id:"",name:"",user:"",pass:"",url:"https://4based.com/",notes:"",favorite:false,active:true,incomes:[]};
+ renderApp();
+ focusSoon("fName");
+}
+function closeEditor(){state.editing=null;renderApp()}
+function toggleEditorFlag(flag,button){
+ const profile=state.editing;
+ if(!profile)return;
+ if(flag==="favorite"){
+  profile.favorite=!profile.favorite;
+  button.textContent=`☆ Favorit: ${profile.favorite?"An":"Aus"}`;
+ }else{
+  profile.active=profile.active===false;
+  button.textContent=`● Status: ${profile.active===false?"Inaktiv":"Aktiv"}`;
+ }
+}
+async function saveProfile(){
+ const profile=state.editing;
+ if(!profile)return;
+ profile.name=fieldValue("fName").trim();
+ profile.user=fieldValue("fUser").trim();
+ profile.pass=fieldValue("fPass");
+ profile.url=fieldValue("fUrl").trim()||"https://4based.com/";
+ profile.notes=fieldValue("fNotes");
+ if(!profile.name||!profile.user||!profile.pass)return alert("Name, Username und Passwort brauchen einen Wert.");
+ if(!/^https:\/\/4based\.com(?:\/|$)/i.test(profile.url))return alert("Bitte eine gültige 4based-URL verwenden.");
+ if(!profile.id){
+  profile.id=uid();
+  state.profiles.unshift(profile);
+ }else{
+  const index=state.profiles.findIndex(item=>item.id===profile.id);
+  state.profiles[index]=profile;
+ }
+ await persist();
+ state.editing=null;
+ renderApp();
+}
+async function deleteProfile(id){
+ if(!confirm("Profil wirklich löschen?"))return;
+ state.profiles=state.profiles.filter(profile=>profile.id!==id);
+ await persist();
+ state.editing=null;
+ renderApp();
+}
+
+/* --- 10. Aktionen: Profil-Detail & Einnahmen --------------------------- */
+function openProfile(id){
+ const profile=state.profiles.find(item=>item.id===id);
+ if(!profile)return;
+ state.profileView={...profile,showPass:false};
+ renderApp();
+}
+function closeProfile(){state.profileView=null;renderApp()}
+function toggleProfilePass(){
+ const profile=state.profileView;
+ if(!profile)return;
+ profile.showPass=!profile.showPass;
+ const output=$("detailPassword"),button=$("togglePassBtn");
+ if(output)output.textContent=profile.showPass?profile.pass:"••••••••••••";
+ if(button){button.textContent=profile.showPass?"🙈":"👁️";button.title=profile.showPass?"Passwort verbergen":"Passwort anzeigen"}
+}
+function openUrl(){
+ const url=state.profileView?.url||"https://4based.com/";
+ if(!/^https:\/\/4based\.com(?:\/|$)/i.test(url))return;
+ window.open(url,"_blank","noopener,noreferrer");
+}
+/* Kopiert Text und leert die Zwischenablage nach 30 s. */
+async function copyText(text){
+ try{await navigator.clipboard.writeText(text)}
+ catch(error){
+  const area=document.createElement("textarea");
+  area.value=text;area.style.position="fixed";area.style.opacity="0";
+  document.body.appendChild(area);area.select();document.execCommand("copy");area.remove();
+ }
+ setTimeout(()=>{try{navigator.clipboard.writeText("")}catch(error){}},30000);
+}
+async function copyProfilePass(){
+ const profile=state.profileView;
+ if(!profile)return;
+ await copyText(profile.pass);
+ const button=$("copyPassBtn");
+ if(button){button.textContent="✓ Kopiert";setTimeout(()=>{if($("copyPassBtn"))$("copyPassBtn").textContent="📋 Kopieren"},1200)}
+}
+function refreshProfileView(){
+ const source=state.profileView&&state.profiles.find(item=>item.id===state.profileView.id);
+ if(source)state.profileView={...source,showPass:state.profileView.showPass};
+}
+function toggleIncomeList(profileId){
+ state.incomeExpanded[profileId]=state.incomeExpanded[profileId]!==true;
+ renderApp();
+}
+function toggleNotes(profileId){
+ state.notesExpanded[profileId]=state.notesExpanded[profileId]!==true;
+ renderApp();
+}
+function openIncome(profileId){state.incomeProfileId=profileId;renderApp();focusSoon("incomeAmount")}
+function closeIncome(){state.incomeProfileId=null;renderApp()}
+async function saveIncome(){
+ const profile=state.profiles.find(item=>item.id===state.incomeProfileId);
+ if(!profile)return;
+ const amount=Number(fieldValue("incomeAmount").replace(",","."));
+ const date=fieldValue("incomeDate")||toDateKey(new Date());
+ const note=fieldValue("incomeNote").trim();
+ if(!Number.isFinite(amount)||amount<=0)return alert("Bitte einen Betrag größer als 0,00 € eingeben.");
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(date))return alert("Bitte ein gültiges Datum auswählen.");
+ profile.incomes=Array.isArray(profile.incomes)?profile.incomes:[];
+ profile.incomes.push({id:uid(),amount:roundAmount(amount),date,note,createdAt:Date.now()});
+ await persist();
+ state.incomeProfileId=null;
+ refreshProfileView();
+ renderApp();
+}
+async function editIncome(profileId,incomeId){
+ const profile=state.profiles.find(item=>item.id===profileId);
+ const income=profile?.incomes?.find(item=>item.id===incomeId);
+ if(!income)return;
+ const amount=prompt("Betrag (€):",String(income.amount).replace(".",","));
+ if(amount===null)return;
+ const parsed=Number(String(amount).replace(",","."));
+ if(!Number.isFinite(parsed)||parsed<=0)return alert("Bitte einen gültigen Betrag eingeben.");
+ const date=prompt("Datum (JJJJ-MM-TT):",income.date||toDateKey(new Date()));
+ if(date===null)return;
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(date))return alert("Bitte ein gültiges Datum verwenden.");
+ const note=prompt("Notiz (optional):",income.note||"");
+ if(note===null)return;
+ income.amount=roundAmount(parsed);
+ income.date=date;
+ income.note=note.trim();
+ await persist();
+ refreshProfileView();
+ renderApp();
+}
+async function deleteIncome(profileId,incomeId){
+ const profile=state.profiles.find(item=>item.id===profileId);
+ if(!profile)return;
+ if(!confirm("Diese Einnahme wirklich löschen?"))return;
+ profile.incomes=(profile.incomes||[]).filter(item=>item.id!==incomeId);
+ await persist();
+ refreshProfileView();
+ renderApp();
+}
+
+/* --- 11. Auswertung ----------------------------------------------------- */
+function incomeTotal(profile){return (profile.incomes||[]).reduce((sum,item)=>sum+Number(item.amount||0),0)}
+function payoutRate(value){return Number(value||0)>=PAYOUT_THRESHOLD?PAYOUT_RATE_HIGH:PAYOUT_RATE_STANDARD}
+function payoutRateLabel(value){return Math.round(payoutRate(value)*100)+" %"}
+function payoutTotal(value){const amount=Number(value||0);return amount*payoutRate(amount)}
+/* Alle Kennzahlen in einem einzigen Durchlauf über die Einnahmen. */
+function incomeStats(){
+ const now=new Date();
+ const dayKey=toDateKey(now);
+ const weekStart=new Date(now);
+ weekStart.setHours(0,0,0,0);
+ weekStart.setDate(weekStart.getDate()-((weekStart.getDay()+6)%7));
+ const weekStartKey=toDateKey(weekStart);
+ const monthPrefix=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0");
+ const selectedMonth=state.billingMonth||monthPrefix;
+ const {rangeFrom,rangeTo}=state;
+ const stats={dayKey,weekStartKey,monthPrefix,selectedMonth,total:0,today:0,week:0,month:0,billingGross:0,billingPayout:0,rangeGross:0,rangePayout:0,payoutAll:0,rows:[]};
+ for(const profile of state.profiles){
+  const incomes=profile.incomes||[];
+  let profileTotal=0,profileMonth=0,profileRange=0;
+  for(const income of incomes){
+   const amount=Number(income.amount||0),date=String(income.date||"");
+   profileTotal+=amount;
+   if(date===dayKey)stats.today+=amount;
+   if(date>=weekStartKey&&date<=dayKey)stats.week+=amount;
+   if(date.startsWith(monthPrefix))stats.month+=amount;
+   if(date.startsWith(selectedMonth))profileMonth+=amount;
+   if(rangeFrom&&rangeTo&&date>=rangeFrom&&date<=rangeTo)profileRange+=amount;
+  }
+  stats.total+=profileTotal;
+  stats.billingGross+=profileMonth;
+  stats.rangeGross+=profileRange;
+  stats.payoutAll+=payoutTotal(profileTotal);
+  stats.billingPayout+=payoutTotal(profileMonth);
+  stats.rangePayout+=payoutTotal(profileRange);
+  if(incomes.length)stats.rows.push({profile,total:profileTotal,month:profileMonth,rate:payoutRateLabel(profileMonth),payout:payoutTotal(profileMonth)});
+ }
+ return stats;
+}
+function setBillingMonth(value){
+ state.billingMonth=/^\d{4}-\d{2}$/.test(value)?value:null;
+ renderApp();
+ setTimeout(()=>$("billingCard")?.scrollIntoView({behavior:"smooth",block:"start"}),0);
+}
+async function toggleBillingStatus(month){
+ state.billingStatus=state.billingStatus||{};
+ state.billingStatus[month]=state.billingStatus[month]!==true;
+ await persist();
+ renderApp();
+}
+function setRange(from,to){
+ if(from&&to&&from>to)return alert("Das Startdatum darf nicht nach dem Enddatum liegen.");
+ state.rangeFrom=from||"";
+ state.rangeTo=to||"";
+ renderApp();
+}
+
+/* --- 12. Recovery-Key --------------------------------------------------- */
 function showRecoveryCode(code,first=false){
  const modal=document.createElement("div");
  modal.className="modal open";
@@ -178,460 +687,131 @@ function showRecoveryCode(code,first=false){
   <p class="small">Mit diesem Schlüssel kannst du dein Master-Passwort zurücksetzen, ohne die gespeicherten Accounts zu verlieren.</p>
   <div class="recovery-code">${esc(formatRecoveryCode(code))}</div>
   <div class="recovery-warning">⚠️ Dieser Schlüssel wird nicht von BaseVault gespeichert. Wer ihn besitzt, kann deinen Tresor zurücksetzen. Speichere ihn sicher.</div>
-  <div class="actions"><button type="button" class="ghost" onclick="copyRecovery('${code}');this.textContent='✓ Kopiert'">📋 Kopieren</button><button type="button" class="ghost" onclick="exportRecovery()">📄 Export</button><button type="button" class="primary" onclick="this.closest('.modal').remove()">Schließen</button></div>
+  <div class="actions"><button type="button" class="ghost" data-act="copy-recovery" data-value="${esc(code)}">📋 Kopieren</button><button type="button" class="ghost" data-act="export-recovery">📄 Export</button><button type="button" class="primary" data-act="close-modal">Schließen</button></div>
  </div>`;
  document.body.appendChild(modal);
 }
-async function copyRecovery(code){
- await navigator.clipboard.writeText(formatRecoveryCode(code));
- setTimeout(()=>navigator.clipboard.writeText("").catch(()=>{}),30000);
+async function copyRecovery(code){await copyText(formatRecoveryCode(code))}
+async function copyRecoveryButton(button){
+ const code=button.dataset.value||state.recoveryCode;
+ if(!code)return;
+ await copyRecovery(code);
+ button.textContent="✓ Kopiert";
 }
-function renderLogin(){
- document.getElementById("root").innerHTML=`<div class="setup"><div class="card"><div class="brand">🔐 BaseVault</div><h2>Tresor entsperren</h2><p class="small">Deine Daten bleiben verschlüsselt. Ohne Master-Passwort oder Wiederherstellungsschlüssel gibt es keinen Klartextzugriff.</p><div class="field"><div class="label">Master-Passwort</div><input id="loginpass" class="input" type="password" autocomplete="current-password" onkeydown="if(event.key==='Enter')unlock()"></div><button class="primary" onclick="unlock()">Entsperren</button><button class="ghost fullbtn" onclick="showRecoveryReset()">Master-Passwort vergessen?</button></div></div>`;
+async function setupRecovery(forceRotate=false){
+ const record=state.record||(state.record=await dbGet());
+ if(!record)return;
+ if(record.recovery&&!forceRotate&&state.recoveryCode)return showRecoveryCode(state.recoveryCode,false);
+ const code=hex(rand(32));
+ record.recovery=await encrypt(await recoveryKey(code),state.profiles);
+ record.wrappedRecoveryKey=await encrypt(state.key,{code});
+ await dbPut(record);
+ state.recoveryCode=code;
+ showRecoveryCode(code,false);
 }
-function showRecoveryReset(){
- document.getElementById("root").innerHTML=`<div class="setup"><div class="card"><div class="brand">🔐 BaseVault</div><h2>Master-Passwort zurücksetzen</h2><p class="small">Gib deinen 64-stelligen Wiederherstellungsschlüssel ein. Ohne ihn kann ein vergessenes Master-Passwort aus Sicherheitsgründen nicht zurückgesetzt werden.</p><div class="field"><div class="label">Wiederherstellungsschlüssel</div><input id="recoveryInput" class="input" placeholder="z. B. 7f2a... (64 Zeichen)" autocomplete="off"></div><div class="field"><div class="label">Neues Master-Passwort</div><input id="newMaster" class="input" type="password" autocomplete="new-password"></div><div class="field"><div class="label">Neues Passwort wiederholen</div><input id="newMaster2" class="input" type="password" autocomplete="new-password"></div><div class="actions"><button class="ghost" onclick="renderLogin()">Abbrechen</button><button class="primary" onclick="resetMaster()">Master-Passwort setzen</button></div></div></div>`;
+async function rotateRecovery(){
+ if(!state.recoveryCode)return setupRecovery(false);
+ if(!confirm("Einen neuen Recovery-Key erzeugen? Der bisherige Recovery-Key wird danach ungültig."))return;
+ await setupRecovery(true);
 }
-async function resetMaster(){
- try{
-  const code=recoveryInput.value.replace(/[\s-]/g,"");
-  const newPass=newMaster.value,newPass2=newMaster2.value;
-  if(!/^[0-9a-fA-F]{64}$/.test(code))return alert("Der Wiederherstellungsschlüssel muss 64 Hex-Zeichen enthalten.");
-  if(!newPass||newPass.length<8)return alert("Das neue Master-Passwort muss mindestens 8 Zeichen haben.");
-  if(newPass!==newPass2)return alert("Die neuen Passwörter stimmen nicht überein.");
-  const v=await dbGet();
-  if(!v||!v.recovery)throw new Error("Für diesen Tresor ist kein Wiederherstellungsschlüssel eingerichtet.");
-  const rkey=await recoveryKey(code);
-  const profiles=await decrypt(rkey,v.recovery);
-  const salt=rand(16),key=await derive(newPass,salt);
-  v.salt=b64(salt);
-  v.check=await encrypt(key,{ok:true});
-  v.payload=await encrypt(key,profiles);
-  v.wrappedRecoveryKey=await encrypt(key,{code});
-  v.lastSavedAt=Date.now();
-  v.autoLockMinutes=Number(v.autoLockMinutes)||0;
-  await dbPut(v);
-  state.key=key;state.profiles=profiles.map(p=>({...p,incomes:Array.isArray(p.incomes)?p.incomes:[]}));state.billingStatus=v.billingStatus||{};state.lastSavedAt=v.lastSavedAt||null;state.autoLockMinutes=Number(v.autoLockMinutes)||0;state.profileView=null;state.editing=null;startAutoLock();
-  alert("Master-Passwort wurde erfolgreich geändert.");
-  renderApp();
- }catch(e){alert("Wiederherstellung fehlgeschlagen. Prüfe den Schlüssel und versuche es erneut.")}
+async function showCurrentRecovery(){
+ if(!state.recoveryCode)return setupRecovery(false);
+ showRecoveryCode(state.recoveryCode,false);
 }
-async function unlock(){try{const v=await dbGet(),key=await derive(document.getElementById("loginpass").value,unb64(v.salt));await decrypt(key,v.check);state.key=key;state.profiles=(await decrypt(key,v.payload)).map(p=>({...p,favorite:!!p.favorite,active:p.active!==false,incomes:Array.isArray(p.incomes)?p.incomes:[]}));state.billingStatus=v.billingStatus||{};state.lastSavedAt=v.lastSavedAt||null;state.autoLockMinutes=Number(v.autoLockMinutes)||0;startAutoLock();renderApp()}catch(e){alert("Falsches Master-Passwort oder beschädigter Tresor.")}}
-
-let currentView="dashboard";
-
-function setView(view){
- currentView=view;
- state.editing=null;
- renderApp();
- window.scrollTo({top:0,behavior:"smooth"});
+async function copyCurrentRecovery(){
+ if(!state.recoveryCode)return alert("Für diesen Tresor ist noch kein Recovery-Key eingerichtet.");
+ await copyRecovery(state.recoveryCode);
+ alert("Recovery-Key wurde kopiert. Bewahre ihn sicher auf.");
+}
+async function exportRecovery(){
+ const code=state.recoveryCode;
+ if(!code)return alert("Für diesen Tresor ist noch kein Recovery-Key eingerichtet.");
+ download("basevault-recovery-key.txt","BASEVAULT RECOVERY KEY\n\n"+formatRecoveryCode(code)+"\n\nBewahre diesen Schlüssel sicher auf. Er wird benötigt, um das Master-Passwort zurückzusetzen.");
+}
+async function exportVault(){
+ const record=state.record||await dbGet();
+ if(!record)return;
+ download("basevault-encrypted-backup.json",JSON.stringify({format:"BaseVault encrypted vault",version:record.v,salt:record.salt,check:record.check,payload:record.payload},null,2),"application/json");
 }
 
-function activateNav(){
- ["dashboard","stats","tools","settings"].forEach(v=>{
-   const el=document.getElementById("nav-"+v);
-   if(el) el.classList.toggle("active", currentView===v);
- });
-}
-
-function viewContent(){
- if(currentView==="stats") {
-  const allIncome=state.profiles.flatMap(p=>(p.incomes||[]).map(i=>({...i,profile:p})));
-  const total=allIncome.reduce((sum,i)=>sum+Number(i.amount||0),0);
-  const now=new Date();
-  const dayKey=toDateKey(now);
-  const weekStart=new Date(now); weekStart.setHours(0,0,0,0); weekStart.setDate(weekStart.getDate()-((weekStart.getDay()+6)%7));
-  const weekStartKey=toDateKey(weekStart);
-  const week=allIncome.filter(i=>String(i.date||"")>=weekStartKey && String(i.date||"")<=dayKey).reduce((s,i)=>s+Number(i.amount||0),0);
-  const monthPrefix=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0");
-  const selectedMonth=state.billingMonth||monthPrefix;
-  const today=allIncome.filter(i=>i.date===dayKey).reduce((s,i)=>s+Number(i.amount||0),0);
-  const month=allIncome.filter(i=>String(i.date||"").startsWith(monthPrefix)).reduce((s,i)=>s+Number(i.amount||0),0);
-  const billingMonthIncome=allIncome.filter(i=>String(i.date||"").startsWith(selectedMonth));
-  const billingGross=billingMonthIncome.reduce((s,i)=>s+Number(i.amount||0),0);
-  const billingPayout=state.profiles.reduce((sum,p)=>{const monthly=(p.incomes||[]).filter(i=>String(i.date||"").startsWith(selectedMonth)).reduce((s,i)=>s+Number(i.amount||0),0);return sum+payoutTotal(monthly)},0);
-  const billingDone=state.billingStatus[selectedMonth]===true;
-  const billingLabel=new Intl.DateTimeFormat("de-DE",{month:"long",year:"numeric"}).format(new Date(selectedMonth+"-01T00:00:00"));
-  const rows=state.profiles.filter(p=>(p.incomes||[]).length).map(p=>{const gross=incomeTotal(p);const monthly=(p.incomes||[]).filter(i=>String(i.date||"").startsWith(selectedMonth)).reduce((s,i)=>s+Number(i.amount||0),0);return `<div class="income-row"><span><b>${esc(p.name)}</b><small>@${esc(p.user)} · Gesamt ${money(gross)} · ${billingLabel}: ${money(monthly)} · <b>She-X: ${payoutRateLabel(monthly)}</b> · Auszahlung: ${money(payoutTotal(monthly))}</small></span><strong>${money(monthly)}</strong></div>`}).join("");
-  return `
-  <section class="view-grid">
-   <div class="card view-hero"><div class="view-kicker">ÜBERSICHT</div><h2>Statistiken</h2><p>Account-Verwaltung und manuelles Einnahmen-Tracking kompakt auf einen Blick.</p></div>
-   <div class="stat-grid">
-    <div class="stat-card"><span>Gesamtumsatz</span><strong>${money(total)}</strong><small>alle gespeicherten Einnahmen</small></div>
-    <div class="stat-card"><span>Heute</span><strong>${money(today)}</strong><small>${dayKey}</small></div>
-    <div class="stat-card"><span>Diese Woche</span><strong>${money(week)}</strong><small>Montag bis heute</small></div>
-    <div class="stat-card"><span>Dieser Monat</span><strong>${money(month)}</strong><small>${monthPrefix}</small></div>
-    <div class="stat-card"><span>Dein Erlös</span><strong>${money(state.profiles.reduce((sum,p)=>sum+payoutTotal(incomeTotal(p)),0))}</strong><small>pro Account nach She-X-Umsatzstufe</small></div>
-    <div class="stat-card"><span>Profil</span><strong>${state.profiles.length}</strong><small>gespeicherte Accounts</small></div>
-    <div class="stat-card"><span>Favoriten</span><strong>${state.profiles.filter(p=>!!p.favorite).length}</strong><small>markierte Profile</small></div>
-   </div>
-   <div class="card" id="billingCard"><h3>Monatliche Abrechnung</h3><p class="small">Jeder Monat wird separat und je Account berechnet. Nach der She-X-Vergütungsstaffel sind es unter 3.000,00 € 20 %, ab 3.000,00 € 25 %. Der jeweilige Satz gilt für den einzelnen Account.</p><div class="field"><div class="label">Abrechnungsmonat</div><input id="billingMonth" class="input" type="month" value="${selectedMonth}" onchange="setBillingMonth(this.value)"></div><div class="stat-grid"><div class="stat-card"><span>Umsatz · ${esc(billingLabel)}</span><strong>${money(billingGross)}</strong><small>nur dieser Monat</small></div><div class="stat-card"><span>Dein Erlös · je Account</span><strong>${money(billingPayout)}</strong><small>20 % / 25 % je nach Account-Umsatz</small></div></div><div class="actions"><button type="button" class="ghost" onclick="toggleBillingStatus('${selectedMonth}')">${billingDone?"☑ Abgerechnet":"☐ Als abgerechnet markieren"}</button><span class="small">${billingDone?"Dieser Monat ist als abgerechnet markiert.":"Noch nicht als abgerechnet markiert."}</span></div></div>
-   <div class="card"><h3>Zeitraum</h3><p class="small">Beliebigen Zeitraum für eine zusätzliche Umsatzprüfung auswählen.</p><div class="range-grid"><div class="field"><div class="label">Von</div><input id="rangeFrom" class="input" type="date" value="${state.rangeFrom||""}" onchange="setRange(this.value,document.getElementById('rangeTo')?.value||'')"></div><div class="field"><div class="label">Bis</div><input id="rangeTo" class="input" type="date" value="${state.rangeTo||""}" onchange="setRange(document.getElementById('rangeFrom')?.value||'',this.value)"></div></div>${state.rangeFrom&&state.rangeTo?(()=>{const rg=allIncome.filter(i=>String(i.date||"")>=state.rangeFrom&&String(i.date||"")<=state.rangeTo).reduce((a,i)=>a+Number(i.amount||0),0);return `<div class="stat-grid"><div class="stat-card"><span>Zeitraum-Umsatz</span><strong>${money(rg)}</strong><small>${esc(state.rangeFrom)} bis ${esc(state.rangeTo)}</small></div><div class="stat-card"><span>Dein Erlös · je Account</span><strong>${money(state.profiles.reduce((sum,p)=>{const n=(p.incomes||[]).filter(i=>String(i.date||"")>=state.rangeFrom&&String(i.date||"")<=state.rangeTo).reduce((s,i)=>s+Number(i.amount||0),0);return sum+payoutTotal(n)},0))}</strong><small>20 % / 25 % je nach Account-Umsatz</small></div></div>`})():''}</div>
-   <div class="card"><h3>Einnahmen pro Account</h3><p class="small">${esc(billingLabel)} · Monatsumsatz je Account · Auszahlung automatisch nach Umsatzstufe</p>${rows||'<p class="small">Für diesen Monat sind noch keine Einnahmen erfasst.</p>'}</div>
-   <div class="card"><h3>Account-Aktivität</h3><p class="small">${state.profiles.filter(p=>!!p.favorite).length} Favoriten · ${state.profiles.filter(p=>p.active!==false).length} aktive Profile · Einnahmen werden ausschließlich lokal im verschlüsselten Vault gespeichert.${state.lastSavedAt?` · Letzte Speicherung: ${esc(new Intl.DateTimeFormat("de-DE",{dateStyle:"short",timeStyle:"medium"}).format(new Date(state.lastSavedAt)))}`:""}</p></div>
-  </section>`;
- }
-
- if(currentView==="tools") return `
-  <section class="view-grid">
-   <div class="card view-hero"><div class="view-kicker">WERKZEUGE</div><h2>Tools</h2><p>Direkte Helfer für deinen täglichen Account-Workflow.</p></div>
-   <div class="tool-grid">
-    <button class="tool-card" onclick="openEditor()"><span class="tool-icon">＋</span><strong>Profil hinzufügen</strong><small>Neuen Account sicher speichern</small></button>
-    <button class="tool-card" onclick="focusSearch()"><span class="tool-icon">⌕</span><strong>Account suchen</strong><small>Schnell einen Eintrag finden</small></button>
-    <button class="tool-card" onclick="exportVault()"><span class="tool-icon">⇩</span><strong>Vault exportieren</strong><small>Verschlüsselte Sicherung erstellen</small></button>
-    <button class="tool-card" onclick="lock()"><span class="tool-icon">🔒</span><strong>Tresor sperren</strong><small>Lokalen Tresor sofort schließen</small></button>
-   </div>
-   <div class="card"><h3>Workflow</h3><div class="tool-list">
-    <div>💬 <span><b>Chatter-Workspace</b><small>Accounts und Arbeitsnotizen bündeln</small></span></div>
-    <div>📊 <span><b>Umsatz-Tracking</b><small>Lokale Einnahmen und Performance erfassen</small></span></div>
-    <div>🧰 <span><b>Workflow-Helfer</b><small>Schnellzugriffe und Vorlagen für den Alltag</small></span></div>
-   </div></div>
-  </section>`;
-
- if(currentView==="settings") return `
-  <section class="view-grid">
-   <div class="card view-hero"><div class="view-kicker">KONFIGURATION</div><h2>Einstellungen</h2><p>BaseVault lokal an deinen Workflow anpassen.</p></div>
-   <div class="card settings-list">
-    <button onclick="showAutoLockSettings()"><span>🔐</span><span><b>Automatische Sperre</b><small>${autoLockLabel()}</small></span><i>›</i></button>
-    <button onclick="showChangeMasterPassword()"><span>🔑</span><span><b>Master-Passwort ändern</b><small>Neues Passwort für den Tresor festlegen</small></span><i>›</i></button>
-    <button onclick="exportVault()"><span>💾</span><span><b>Vault-Backup</b><small>Verschlüsselte Sicherung exportieren</small></span><i>›</i></button>
-   <button onclick="showCurrentRecovery()"><span>🔑</span><span><b>Recovery-Key anzeigen</b><small>Schlüssel anzeigen oder kopieren</small></span><i>›</i></button>
-   <button onclick="copyCurrentRecovery()"><span>📋</span><span><b>Recovery-Key kopieren</b><small>Für einen sicheren externen Speicher</small></span><i>›</i></button>
-   <button onclick="exportRecovery()"><span>📄</span><span><b>Recovery-Key exportieren</b><small>Als Textdatei sichern</small></span><i>›</i></button>
-   <button onclick="rotateRecovery()"><span>♻️</span><span><b>Recovery-Key neu erzeugen</b><small>Der alte Schlüssel wird ungültig</small></span><i>›</i></button>
-    <button onclick="showAbout()"><span>ℹ️</span><span><b>Über BaseVault</b><small>Lokale Offline-Version</small></span><i>›</i></button>
-   </div>
-   <div class="card danger-card"><h3>Sicherheit</h3><p class="small">Master-Passwort und verschlüsselte Daten bleiben lokal. Ein verlorenes Master-Passwort kann nicht wiederhergestellt werden.</p></div>
-  </section>`;
-
- return "";
-}
-
-
-
+/* --- 13. Master-Passwort ändern ---------------------------------------- */
 function showChangeMasterPassword(){
- const root=document.createElement("div");
- root.className="change-pass-modal";
- root.innerHTML=`<div class="change-pass-sheet" role="dialog" aria-modal="true">
+ const modal=document.createElement("div");
+ modal.className="change-pass-modal";
+ modal.dataset.backdropClose="remove";
+ modal.innerHTML=`<div class="change-pass-sheet" role="dialog" aria-modal="true">
    <h3>Master-Passwort ändern</h3>
    <p>Du bist bereits angemeldet. Gib zuerst dein aktuelles Master-Passwort ein und danach das neue Passwort zweimal.</p>
    <div class="field"><div class="label">Aktuelles Master-Passwort</div><input id="changeOldMaster" class="input" type="password" autocomplete="current-password"></div>
    <div class="field"><div class="label">Neues Master-Passwort</div><input id="changeNewMaster" class="input" type="password" autocomplete="new-password"></div>
    <div class="field"><div class="label">Neues Passwort wiederholen</div><input id="changeNewMaster2" class="input" type="password" autocomplete="new-password"></div>
    <div class="change-pass-note">Deine Accounts, Einnahmen, Notizen und dein bestehender Recovery-Key bleiben erhalten. Nur die Verschlüsselung des Tresors wird auf den neuen Schlüssel umgestellt.</div>
-   <div class="change-pass-actions"><button class="ghost" onclick="this.closest('.change-pass-modal').remove()">Abbrechen</button><button class="primary" onclick="changeMasterPassword()">Passwort ändern</button></div>
+   <div class="change-pass-actions"><button class="ghost" data-act="close-modal">Abbrechen</button><button class="primary" data-act="change-pass">Passwort ändern</button></div>
  </div>`;
- document.body.appendChild(root);
- root.addEventListener("click",e=>{if(e.target===root)root.remove()});
- setTimeout(()=>document.getElementById("changeOldMaster")?.focus(),50);
+ document.body.appendChild(modal);
+ focusSoon("changeOldMaster");
 }
 async function changeMasterPassword(){
  const modal=document.querySelector(".change-pass-modal");
- const oldPass=document.getElementById("changeOldMaster")?.value||"";
- const newPass=document.getElementById("changeNewMaster")?.value||"";
- const newPass2=document.getElementById("changeNewMaster2")?.value||"";
+ const oldPass=fieldValue("changeOldMaster"),newPass=fieldValue("changeNewMaster"),repeat=fieldValue("changeNewMaster2");
  if(!oldPass)return alert("Bitte dein aktuelles Master-Passwort eingeben.");
- if(!newPass||newPass.length<8)return alert("Das neue Master-Passwort muss mindestens 8 Zeichen haben.");
- if(newPass!==newPass2)return alert("Die neuen Passwörter stimmen nicht überein.");
+ if(!newPass||newPass.length<MIN_PASSWORD_LENGTH)return alert("Das neue Master-Passwort muss mindestens 8 Zeichen haben.");
+ if(newPass!==repeat)return alert("Die neuen Passwörter stimmen nicht überein.");
  try{
-   const v=await dbGet();
-   if(!v)throw new Error("Kein Tresor gefunden.");
-   const oldKey=await derive(oldPass,unb64(v.salt));
-   await decrypt(oldKey,v.check);
-   const profiles=await decrypt(oldKey,v.payload);
-   const salt=rand(16),newKey=await derive(newPass,salt);
-
-   // Keep the existing Recovery-Key usable after the password change.
-   let wrappedRecoveryKey=v.wrappedRecoveryKey;
-   if(v.wrappedRecoveryKey){
-     const wrapped=await decrypt(oldKey,v.wrappedRecoveryKey);
-     wrappedRecoveryKey=await encrypt(newKey,{code:wrapped.code});
-   }
-
-   v.salt=b64(salt);
-   v.check=await encrypt(newKey,{ok:true});
-   v.payload=await encrypt(newKey,profiles);
-   v.wrappedRecoveryKey=wrappedRecoveryKey;
-   v.lastSavedAt=Date.now();
-   v.billingStatus=v.billingStatus||state.billingStatus||{};
-   v.autoLockMinutes=Number(state.autoLockMinutes)||Number(v.autoLockMinutes)||0;
-   await dbPut(v);
-
-   state.key=newKey;
-   state.profiles=profiles.map(p=>({...p,favorite:!!p.favorite,active:p.active!==false,incomes:Array.isArray(p.incomes)?p.incomes:[]}));
-   state.billingStatus=v.billingStatus||{};
-   state.lastSavedAt=v.lastSavedAt;
-   state.autoLockMinutes=Number(v.autoLockMinutes)||0;
-   startAutoLock();
-   modal?.remove();
-   alert("Master-Passwort wurde erfolgreich geändert.");
-   renderApp();
- }catch(e){
-   alert("Das aktuelle Master-Passwort ist falsch oder der Tresor konnte nicht gelesen werden.");
+  const record=state.record||await dbGet();
+  if(!record)throw new Error("Kein Tresor gefunden.");
+  const oldKey=await derive(oldPass,unb64(record.salt));
+  await decrypt(oldKey,record.check);
+  const profiles=await decrypt(oldKey,record.payload);
+  const salt=rand(16),newKey=await derive(newPass,salt);
+  record.salt=b64(salt);
+  record.check=await encrypt(newKey,{ok:true});
+  record.payload=await encrypt(newKey,profiles);
+  if(isRecoveryCode(state.recoveryCode))record.wrappedRecoveryKey=await encrypt(newKey,{code:state.recoveryCode});   // Recovery-Key bleibt nutzbar
+  record.lastSavedAt=Date.now();
+  record.billingStatus=record.billingStatus||state.billingStatus||{};
+  record.autoLockMinutes=Number(state.autoLockMinutes)||Number(record.autoLockMinutes)||0;
+  await dbPut(record);
+  modal?.remove();
+  alert("Master-Passwort wurde erfolgreich geändert.");
+  await applyUnlocked(record,newKey,profiles,state.recoveryCode);
+ }catch(error){
+  alert("Das aktuelle Master-Passwort ist falsch oder der Tresor konnte nicht gelesen werden.");
  }
 }
 
-async function getRecoveryCode(){
- const v=await dbGet();
- if(!v||!v.wrappedRecoveryKey) return null;
- try{
-   const wrapped=await decrypt(state.key,v.wrappedRecoveryKey);
-   return wrapped.code;
- }catch(e){return null}
+/* --- 14. Auto-Lock-Einstellungen & Info --------------------------------- */
+function showAutoLockSettings(){
+ const current=Number(state.autoLockMinutes)||0;
+ const modal=document.createElement("div");
+ modal.className="auto-lock-modal";
+ modal.dataset.backdropClose="remove";
+ modal.innerHTML=`<div class="auto-lock-sheet" role="dialog" aria-modal="true">
+   <h3>Automatische Sperre</h3>
+   <p>BaseVault sperrt den Tresor automatisch, wenn innerhalb der gewählten Zeit keine Aktivität erkannt wird. Die Einstellung wird lokal gespeichert.</p>
+   <div class="auto-lock-options">
+    ${AUTOLOCK_OPTIONS.map(minutes=>`<button class="auto-lock-option ${minutes===current?"active":""}" data-act="set-auto-lock" data-minutes="${minutes}">
+      <strong>${minutes===0?"Deaktiviert":minutes<60?minutes+" Minute"+(minutes===1?"":"n"):"1 Stunde"}</strong>
+      <small>${minutes===0?"Keine automatische Sperre":"Bei Inaktivität automatisch sperren"}</small>
+    </button>`).join("")}
+   </div>
+   <button class="ghost auto-lock-close" data-act="close-modal">Schließen</button>
+ </div>`;
+ document.body.appendChild(modal);
 }
-async function setupRecovery(forceRotate=false){
- const v=await dbGet();
- if(v.recovery && !forceRotate){
-   const existing=await getRecoveryCode();
-   if(existing) return showRecoveryCode(existing,false);
+async function setAutoLock(minutes){
+ state.autoLockMinutes=Number(minutes)||0;
+ if(state.key){
+  await persist();
+  startAutoLock();
  }
- const code=hex(rand(32));
- const rkey=await recoveryKey(code);
- v.recovery=await encrypt(rkey,state.profiles);
- v.wrappedRecoveryKey=await encrypt(state.key,{code});
- await dbPut(v);
- showRecoveryCode(code,false);
-}
-async function rotateRecovery(){
- const current=await getRecoveryCode();
- if(!current)return setupRecovery(false);
- if(!confirm("Einen neuen Recovery-Key erzeugen? Der bisherige Recovery-Key wird danach ungültig."))return;
- await setupRecovery(true);
-}
-async function exportRecovery(){
- const code=await getRecoveryCode();
- if(!code)return alert("Für diesen Tresor ist noch kein Recovery-Key eingerichtet.");
- const blob=new Blob([
-  "BASEVAULT RECOVERY KEY\n\n"+
-  formatRecoveryCode(code)+
-  "\n\nBewahre diesen Schlüssel sicher auf. Er wird benötigt, um das Master-Passwort zurückzusetzen."
- ],{type:"text/plain;charset=utf-8"});
- const a=document.createElement("a");
- a.href=URL.createObjectURL(blob);
- a.download="basevault-recovery-key.txt";
- document.body.appendChild(a);a.click();a.remove();
- setTimeout(()=>URL.revokeObjectURL(a.href),1000);
-}
-async function copyCurrentRecovery(){
- const code=await getRecoveryCode();
- if(!code)return alert("Für diesen Tresor ist noch kein Recovery-Key eingerichtet.");
- await copyRecovery(code);
- alert("Recovery-Key wurde kopiert. Bewahre ihn sicher auf.");
-}
-async function showCurrentRecovery(){
- const code=await getRecoveryCode();
- if(!code)return setupRecovery(false);
- showRecoveryCode(code,false);
-}
-async function exportVault(){
- const v=await dbGet();
- if(!v)return;
- const blob=new Blob([JSON.stringify({format:"BaseVault encrypted vault",version:v.v,salt:v.salt,check:v.check,payload:v.payload},null,2)],{type:"application/json"});
- const a=document.createElement("a");
- a.href=URL.createObjectURL(blob);
- a.download="basevault-encrypted-backup.json";
- document.body.appendChild(a);
- a.click();
- a.remove();
- setTimeout(()=>URL.revokeObjectURL(a.href),1000);
-}
-
-
-function setFilter(filter){
- state.filter=filter;
+ document.querySelector(".auto-lock-modal")?.remove();
  renderApp();
-}
-function toggleFavorite(id){
- const p=state.profiles.find(x=>x.id===id);
- if(!p)return;
- p.favorite=!p.favorite;
- persist().then(renderApp);
-}
-function toggleActive(id){
- const p=state.profiles.find(x=>x.id===id);
- if(!p)return;
- p.active=p.active===false;
- persist().then(renderApp);
-}
-function renderApp(){
- const q=state.query.toLowerCase();
- const list=state.profiles.filter(p=>{
-   const matchesQuery=(p.name+" "+p.user).toLowerCase().includes(q);
-   if(!matchesQuery)return false;
-   if(state.filter==="favorites")return !!p.favorite;
-   if(state.filter==="active")return p.active!==false;
-   if(state.filter==="4based")return true;
-   return true;
- });
-
- document.getElementById("root").innerHTML=`
- <main class="app">
-  <header>
-   <div class="brandbox">
-    <div class="brandmark">🔐</div>
-    <div class="brandtext"><div class="brand">BASE<span class="accent">VAULT</span></div><div class="tagline">DEINE ACCOUNTS · SICHER · LOKAL</div></div>
-   </div>
-   <div class="head-actions">
-    <button class="iconbtn" type="button" title="Suche" onclick="focusSearch()">⌕</button>
-    <button class="iconbtn" type="button" title="Einstellungen" onclick="setView('settings')">⚙</button>
-    <button class="iconbtn lockbtn" type="button" title="Tresor sperren" aria-label="Tresor sperren" onclick="lock()">×</button>
-   </div>
-  </header>
-
-  ${currentView==="dashboard"?`
-   <div class="searchwrap"><span class="searchicon">⌕</span><input id="profileSearch" class="search" placeholder="Profil suchen..." value="${esc(state.query)}" oninput="state.query=this.value;renderApp();restoreSearch()"></div>
-   <div class="filters">
-    <button type="button" class="filter ${state.filter==="all"?"active":""}" onclick="setFilter('all')">▦ &nbsp;Alle</button>
-    <button type="button" class="filter ${state.filter==="4based"?"active":""}" onclick="setFilter('4based')">♨ &nbsp;4based</button>
-    <button type="button" class="filter ${state.filter==="favorites"?"active":""}" onclick="setFilter('favorites')">☆ &nbsp;Favoriten</button>
-    <button type="button" class="filter ${state.filter==="active"?"active":""}" onclick="setFilter('active')">● &nbsp;Aktiv</button>
-   </div>
-   <section class="grid">
-    ${list.length?list.map(card).join(""):`<div class="card empty">
-      <div class="empty-visual"><div class="folder"></div></div>
-      <h2>${state.profiles.length?"Kein Profil gefunden.":"Noch keine Profile angelegt."}</h2>
-      <p>${state.profiles.length?"Versuch es mit einem anderen Suchbegriff.":"Füge jetzt deinen ersten 4based-Account hinzu und behalte alles sicher an einem Ort."}</p>
-      ${state.profiles.length?"":`<button type="button" class="primary" onclick="openEditor()">＋&nbsp; Erstes Profil hinzufügen</button>`}
-    </div>`}
-   </section>
-   ${!state.profiles.length?`<div class="feature-grid">
-    <div class="feature"><div class="fi">♢</div><strong>100% Lokal</strong><span>Keine Cloud</span></div>
-    <div class="feature"><div class="fi">♙</div><strong>Verschlüsselt</strong><span>AES-256-GCM</span></div>
-    <div class="feature"><div class="fi">◉</div><strong>Deine Daten</strong><span>Nur auf deinem Gerät</span></div>
-    <div class="feature"><div class="fi">♡</div><strong>Für Creator</strong><span>Mit ❤️ gemacht</span></div>
-   </div>`:""}
-  `:viewContent()}
- </main>
-
- <button type="button" class="fab" title="Profil hinzufügen" onclick="openEditor()">＋</button>
-
- <nav class="bottom">
-  <div class="bottom-inner">
-   <button type="button" id="nav-dashboard" class="nav" onclick="setView('dashboard')"><span class="ni">▦</span>Dashboard</button>
-   <button type="button" id="nav-stats" class="nav" onclick="setView('stats')"><span class="ni">▥</span>Statistiken</button>
-   <button type="button" id="nav-tools" class="nav" onclick="setView('tools')"><span class="ni">⌁</span>Tools</button>
-   <button type="button" id="nav-settings" class="nav" onclick="setView('settings')"><span class="ni">⚙</span>Einstellungen</button>
-  </div>
- </nav>
- ${editor()}${profileDetail()}${incomeEditor()}`;
-
- activateNav();
-}
-
-function restoreSearch(){
- const el=document.getElementById("profileSearch");
- if(el){el.focus();el.setSelectionRange(el.value.length,el.value.length)}
-}
-function focusSearch(){
- if(currentView!=="dashboard")currentView="dashboard";
- renderApp();
- const el=document.getElementById("profileSearch");
- if(el){el.focus();el.scrollIntoView({block:"center",behavior:"smooth"})}
-}
-function card(p){
- const initials=esc((p.name||"?").trim().slice(0,2).toUpperCase());
- const fav=!!p.favorite;
- const active=p.active!==false;
- return `<div class="card profile-card" role="button" tabindex="0" onclick="openProfile('${p.id}')" onkeydown="if(event.key==='Enter'||event.key===' ')openProfile('${p.id}')">
-   <div class="profile">
-    <div class="avatar">${initials}</div>
-    <div class="grow"><div class="name">${esc(p.name)}</div><div class="sub">@${esc(p.user)}</div><span class="pill"><span class="dot ${active?"":"off"}"></span> ${active?"AKTIV":"INAKTIV"}</span></div>
-    <div class="profile-actions">
-      <button type="button" class="smallbtn favorite-btn ${fav?"is-favorite":""}" title="${fav?"Favorit entfernen":"Als Favorit markieren"}" aria-label="${fav?"Favorit entfernen":"Als Favorit markieren"}" onclick="event.stopPropagation();toggleFavorite('${p.id}')">${fav?"★":"☆"}</button>
-      <button type="button" class="smallbtn" title="Profil bearbeiten" onclick="event.stopPropagation();openEditor('${p.id}')">⋮</button>
-    </div>
-   </div>
-  </div>`;
-}
-function openProfile(id){
- const p=state.profiles.find(x=>x.id===id);
- if(!p)return;
- state.profileView={...p,showPass:false};
- renderApp();
-}
-function closeProfile(){state.profileView=null;renderApp()}
-function toggleProfilePass(){if(!state.profileView)return;state.profileView.showPass=!state.profileView.showPass;renderApp()}
-function copyProfilePass(){
- const p=state.profileView;if(!p)return;
- navigator.clipboard.writeText(p.pass).then(()=>{
-   const b=document.getElementById("copyPassBtn");
-   if(b){b.textContent="✓ Kopiert";setTimeout(()=>{if(document.getElementById("copyPassBtn"))document.getElementById("copyPassBtn").textContent="📋 Kopieren"},1200)}
-   setTimeout(()=>navigator.clipboard.writeText("").catch(()=>{}),30000);
- });
-}
-function setBillingMonth(value){state.billingMonth=/^\d{4}-\d{2}$/.test(value)?value:null;renderApp();setTimeout(()=>document.getElementById("billingCard")?.scrollIntoView({behavior:"smooth",block:"start"}),0)}
-function toggleBillingStatus(month){state.billingStatus=state.billingStatus||{};state.billingStatus[month]=state.billingStatus[month]!==true;persist().then(renderApp)}
-function setRange(from,to){if(from&&to&&from>to)return alert("Das Startdatum darf nicht nach dem Enddatum liegen.");state.rangeFrom=from||"";state.rangeTo=to||"";renderApp()}
-function money(value){return new Intl.NumberFormat("de-DE",{style:"currency",currency:"EUR"}).format(Number(value||0))}
-function toDateKey(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
-const PAYOUT_THRESHOLD=3000;
-const PAYOUT_RATE_STANDARD=0.20;
-const PAYOUT_RATE_HIGH=0.25;
-function incomeTotal(p){return (p.incomes||[]).reduce((s,i)=>s+Number(i.amount||0),0)}
-function payoutRate(value){return Number(value||0)>=PAYOUT_THRESHOLD?PAYOUT_RATE_HIGH:PAYOUT_RATE_STANDARD}
-function payoutRateLabel(value){return Math.round(payoutRate(value)*100)+" %"}
-function payoutTotal(value){const n=Number(value||0);return n*payoutRate(n)}
-function incomeSection(p){
- const entries=[...(p.incomes||[])].sort((a,b)=>String(b.date).localeCompare(String(a.date))||Number(b.createdAt||0)-Number(a.createdAt||0));
- const expanded=state.incomeExpanded?.[p.id]===true;
- return `<div class="income-box"><div class="income-head"><div><div class="label">EINNAHMEN</div><div class="income-total">${money(incomeTotal(p))}</div><div class="small">Dein Erlös (${payoutRateLabel(incomeTotal(p))}): <b>${money(payoutTotal(incomeTotal(p)))}</b></div></div><button type="button" class="ghost income-add" onclick="openIncome('${p.id}')">＋ Einnahme hinzufügen</button></div>${entries.length?`<button type="button" class="income-toggle" aria-expanded="${expanded}" onclick="toggleIncomeList('${p.id}')"><span>${expanded?"Einzahlungen ausblenden":"Einzahlungen anzeigen"} <small>(${entries.length})</small></span><span class="chev">${expanded?"⌃":"⌄"}</span></button><div class="income-list${expanded?"":" collapsed"}">${entries.map(i=>`<div class="income-row"><span><b>${money(i.amount)}</b><small>${esc(i.date)}${i.note?` · ${esc(i.note)}`:""}</small></span><button type="button" class="smallbtn" title="Einnahme bearbeiten" onclick="editIncome('${p.id}','${i.id}')">✎</button><button type="button" class="smallbtn danger" title="Einnahme löschen" onclick="deleteIncome('${p.id}','${i.id}')">×</button></div>`).join("")}</div>`:`<div class="small income-empty">Noch keine Einnahmen für diesen Account.</div>`}</div>`;
-}
-function toggleIncomeList(profileId){
- state.incomeExpanded=state.incomeExpanded||{};
- state.incomeExpanded[profileId]=state.incomeExpanded[profileId]!==true;
- renderApp();
-}
-function toggleNotes(profileId){
- state.notesExpanded=state.notesExpanded||{};
- state.notesExpanded[profileId]=state.notesExpanded[profileId]!==true;
- renderApp();
-}
-function openIncome(profileId){state.incomeProfileId=profileId;renderApp();setTimeout(()=>document.getElementById("incomeAmount")?.focus(),0)}
-function closeIncome(){state.incomeProfileId=null;renderApp()}
-async function saveIncome(){
- const p=state.profiles.find(x=>x.id===state.incomeProfileId); if(!p)return;
- const amount=Number(String(document.getElementById("incomeAmount")?.value||"").replace(",","."));
- const date=document.getElementById("incomeDate")?.value||toDateKey(new Date());
- const note=(document.getElementById("incomeNote")?.value||"").trim();
- if(!Number.isFinite(amount)||amount<=0)return alert("Bitte einen Betrag größer als 0,00 € eingeben.");
- if(!/^\d{4}-\d{2}-\d{2}$/.test(date))return alert("Bitte ein gültiges Datum auswählen.");
- p.incomes=Array.isArray(p.incomes)?p.incomes:[];
- p.incomes.push({id:crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+Math.random().toString(36).slice(2),amount:Math.round(amount*100)/100,date,note,createdAt:Date.now()});
- await persist();state.incomeProfileId=null;renderApp();
-}
-async function editIncome(profileId,incomeId){const p=state.profiles.find(x=>x.id===profileId);const i=p?.incomes?.find(x=>x.id===incomeId);if(!i)return;const amount=prompt("Betrag (€):",String(i.amount).replace(".",","));if(amount===null)return;const n=Number(String(amount).replace(",","."));if(!Number.isFinite(n)||n<=0)return alert("Bitte einen gültigen Betrag eingeben.");const date=prompt("Datum (JJJJ-MM-TT):",i.date||toDateKey(new Date()));if(date===null)return;if(!/^\d{4}-\d{2}-\d{2}$/.test(date))return alert("Bitte ein gültiges Datum verwenden.");const note=prompt("Notiz (optional):",i.note||"");if(note===null)return;i.amount=Math.round(n*100)/100;i.date=date;i.note=note.trim();await persist();if(state.profileView?.id===profileId)state.profileView={...p,showPass:false};renderApp()}
-async function deleteIncome(profileId,incomeId){const p=state.profiles.find(x=>x.id===profileId);if(!p)return;if(!confirm("Diese Einnahme wirklich löschen?"))return;p.incomes=(p.incomes||[]).filter(i=>i.id!==incomeId);await persist();if(state.profileView?.id===profileId)state.profileView={...p,showPass:false};renderApp()}
-function incomeEditor(){
- const p=state.profiles.find(x=>x.id===state.incomeProfileId);if(!p)return "";
- return `<div class="modal open" onclick="if(event.target===this)closeIncome()"><div class="sheet"><div class="view-kicker">${esc(p.name)}</div><h2>Neue Einnahme</h2><div class="field"><div class="label">Betrag</div><input id="incomeAmount" class="input" inputmode="decimal" type="number" min="0.01" step="0.01" placeholder="z. B. 47,50"></div><div class="field"><div class="label">Datum</div><input id="incomeDate" class="input" type="date" value="${toDateKey(new Date())}"></div><div class="field"><div class="label">Notiz (optional)</div><input id="incomeNote" class="input" placeholder="z. B. Chat / PPV / Trinkgeld"></div><div class="actions"><button type="button" class="ghost" onclick="closeIncome()">Abbrechen</button><button type="button" class="primary" onclick="saveIncome()">＋ Speichern</button></div></div></div>`;
-}
-function profileDetail(){
- const p=state.profileView;
- if(!p)return "";
- const shown=p.showPass?esc(p.pass):"••••••••••••";
- return `<div id="profileModal" class="modal open" onclick="if(event.target===this)closeProfile()">
-   <div class="sheet profile-sheet">
-    <div class="detail-head">
-      <div class="avatar detail-avatar">${esc((p.name||"?").trim().slice(0,2).toUpperCase())}</div>
-      <div class="grow"><div class="detail-title">${esc(p.name)}</div><div class="sub">@${esc(p.user)}</div><span class="pill"><span class="dot"></span> 4BASED</span></div>
-      <button type="button" class="iconbtn" onclick="closeProfile()" title="Schließen">×</button>
-    </div>
-    <div class="field"><div class="label">Username / E-Mail</div><div class="value"><span>${esc(p.user)}</span><button type="button" title="Username kopieren" onclick="copyText('${encodeURIComponent(p.user)}')">📋</button></div></div>
-    <div class="field"><div class="label">Passwort</div><div class="value password-value"><span id="detailPassword">${shown}</span><button type="button" title="${p.showPass?"Passwort verbergen":"Passwort anzeigen"}" onclick="toggleProfilePass()">${p.showPass?"🙈":"👁️"}</button><button id="copyPassBtn" type="button" title="Passwort kopieren" onclick="copyProfilePass()">📋 Kopieren</button></div></div>
-    <div class="field"><div class="label">4based</div><div class="value"><span>${esc(p.url||"https://4based.com/")}</span><button type="button" title="4based öffnen" onclick="window.open('${esc(p.url||"https://4based.com/")}','_blank','noopener')">↗</button></div></div>
-    ${p.notes?(()=>{const expanded=state.notesExpanded?.[p.id]===true; const count=p.notes.trim().length; return `<div class="field"><div class="label">Notizen</div><button type="button" class="notes-toggle" aria-expanded="${expanded}" onclick="toggleNotes('${p.id}')"><span>${expanded?"Notizen ausblenden":"Notizen anzeigen"} <small>(${count} Zeichen)</small></span><span class="chev">${expanded?"⌃":"⌄"}</span></button><div class="notes-content${expanded?"":" collapsed"}"><div class="notes-box">${esc(p.notes)}</div></div></div>`})():""}
-    ${incomeSection(p)}
-    <div class="actions">
-      <button type="button" class="ghost ${p.favorite?"favorite-detail":""}" onclick="toggleFavorite('${p.id}');closeProfile()">${p.favorite?"★ Favorit":"☆ Favorit"}</button>
-      <button type="button" class="ghost" onclick="toggleActive('${p.id}');closeProfile()">${p.active===false?"● Inaktiv":"● Aktiv"}</button>
-    </div>
-    <div class="actions"><button type="button" class="ghost" onclick="closeProfile()">Schließen</button><button type="button" class="primary" onclick="closeProfile();openEditor('${p.id}')">Bearbeiten</button></div>
-   </div>
-  </div>`;
 }
 function showAbout(){
  const modal=document.createElement("div");
  modal.className="modal open";
+ modal.dataset.backdropClose="remove";
  modal.innerHTML=`<div class="sheet" style="text-align:center">
    <div style="font-size:46px;margin:2px 0 8px">🛡️</div>
    <div class="view-kicker">BASEVAULT</div>
@@ -646,125 +826,290 @@ function showAbout(){
    <div class="small" style="margin-bottom:18px">
      Deine Daten bleiben lokal auf deinem Gerät und werden nicht an einen Server übertragen.
    </div>
-   <button class="primary" type="button" onclick="this.closest('.modal').remove()">Schließen</button>
+   <button class="primary" type="button" data-act="close-modal">Schließen</button>
  </div>`;
- modal.addEventListener("click",e=>{if(e.target===modal)modal.remove()});
  document.body.appendChild(modal);
 }
 
-function editor(){if(!state.editing)return "";const p=state.editing;return `<div id="modal" class="modal open"><div class="sheet"><h2>${p.id?"Profil bearbeiten":"Neues Profil"}</h2><div class="field"><div class="label">Profilname</div><input id="fName" class="input" value="${esc(p.name)}" placeholder="z. B. Creator 01"></div><div class="field"><div class="label">Username / E-Mail</div><input id="fUser" class="input" value="${esc(p.user)}"></div><div class="field"><div class="label">Passwort</div><input id="fPass" class="input" type="password" value="${esc(p.pass)}"></div><div class="field"><div class="label">4based URL</div><input id="fUrl" class="input" value="${esc(p.url||"https://4based.com/")}"></div><div class="field"><div class="label">Notizen</div><textarea id="fNotes" class="textarea">${esc(p.notes)}</textarea></div>
- <div class="actions">
-   <button type="button" class="ghost" onclick="state.editing.favorite=!state.editing.favorite;renderApp()">☆ Favorit: ${p.favorite?"An":"Aus"}</button>
-   <button type="button" class="ghost" onclick="state.editing.active=state.editing.active===false;renderApp()">● Status: ${p.active===false?"Inaktiv":"Aktiv"}</button>
- </div><div class="actions"><button type="button" class="ghost" onclick="closeEditor()">Abbrechen</button><button type="button" class="primary" onclick="saveProfile()">Speichern</button></div>${p.id?`<div class="actions"><button type="button" class="ghost danger" onclick="deleteProfile('${p.id}')">Profil löschen</button><button type="button" class="ghost" onclick="copyText('${encodeURIComponent(p.user)}')">Username kopieren</button></div>`:""}</div></div>`}
-function openEditor(id){const p=state.profiles.find(x=>x.id===id);state.editing=p?{...p}: {id:"",name:"",user:"",pass:"",url:"https://4based.com/",notes:"",favorite:false,active:true,incomes:[]};renderApp();setTimeout(()=>document.getElementById("fName")?.focus(),0)}
-function closeEditor(){state.editing=null;renderApp()}
-async function saveProfile(){const p=state.editing;p.name=document.getElementById("fName").value.trim();p.user=document.getElementById("fUser").value.trim();p.pass=document.getElementById("fPass").value;p.url=document.getElementById("fUrl").value.trim()||"https://4based.com/";p.notes=document.getElementById("fNotes").value;if(!p.name||!p.user||!p.pass)return alert("Name, Username und Passwort brauchen einen Wert.");if(!/^https:\/\/4based\.com(?:\/|$)/i.test(p.url))return alert("Bitte eine gültige 4based-URL verwenden.");if(!p.id){p.id=(crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+Math.random().toString(36).slice(2));state.profiles.unshift(p)}else{const i=state.profiles.findIndex(x=>x.id===p.id);state.profiles[i]=p}await persist();state.editing=null;renderApp()}
-async function deleteProfile(id){if(!confirm("Profil wirklich löschen?"))return;state.profiles=state.profiles.filter(p=>p.id!==id);await persist();state.editing=null;renderApp()}
-async function persist(){
- const v=await dbGet();
- v.payload=await encrypt(state.key,state.profiles);
- if(v.wrappedRecoveryKey){
-   const wrapped=await decrypt(state.key,v.wrappedRecoveryKey);
-   const rkey=await recoveryKey(wrapped.code);
-   v.recovery=await encrypt(rkey,state.profiles);
- }
- state.lastSavedAt=Date.now();
- v.lastSavedAt=state.lastSavedAt;
- v.billingStatus=state.billingStatus||{};
- v.autoLockMinutes=Number(state.autoLockMinutes)||0;
- await dbPut(v);
-}
-function togglePass(){const el=document.getElementById("fPass");el.type=el.type==="password"?"text":"password"}
-async function copyCurrent(id){const el=document.getElementById(id);if(!el)return;await copyText(el.value)}
-async function copyText(text){try{await navigator.clipboard.writeText(text)}catch(e){const ta=document.createElement("textarea");ta.value=text;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove()}setTimeout(()=>{try{navigator.clipboard.writeText("")}catch(e){}},30000)}
-function openUrl(){const url=document.getElementById("fUrl").value.trim();if(/^https:\/\/4based\.com(?:\/|$)/i.test(url))window.open(url,"_blank","noopener,noreferrer")}
-
-function autoLockLabel(){
- const m=Number(state.autoLockMinutes)||0;
- if(!m)return "Deaktiviert";
- if(m<60)return `Nach ${m} Minute${m===1?"":"n"} Inaktivität`;
- const h=m/60;
- return `Nach ${h===1?"1 Stunde":h+" Stunden"} Inaktivität`;
-}
-function clearAutoLockTimer(){
- if(autoLockTimer){clearTimeout(autoLockTimer);autoLockTimer=null}
-}
-function startAutoLock(){
- clearAutoLockTimer();
- if(!state.key || !Number(state.autoLockMinutes))return;
- state.lastActivityAt=Date.now();
- scheduleAutoLock();
-}
-function scheduleAutoLock(){
- clearAutoLockTimer();
- const minutes=Number(state.autoLockMinutes)||0;
- if(!state.key || !minutes)return;
- const ms=minutes*60*1000;
- const elapsed=Date.now()-(state.lastActivityAt||Date.now());
- const remaining=Math.max(250,ms-elapsed);
- autoLockTimer=setTimeout(()=>{
-   if(!state.key)return;
-   if(Date.now()-(state.lastActivityAt||Date.now())>=ms){
-     lock();
-     alert(`BaseVault wurde nach ${autoLockLabel().replace(/^Nach /,"")} automatisch gesperrt.`);
-   }else{
-     scheduleAutoLock();
-   }
- },remaining);
-}
-function noteActivity(){
- if(!state.key || !Number(state.autoLockMinutes))return;
- state.lastActivityAt=Date.now();
- scheduleAutoLock();
-}
-function showAutoLockSettings(){
- const current=Number(state.autoLockMinutes)||0;
- const options=[0,1,5,10,15,30,60];
- const root=document.createElement("div");
- root.className="auto-lock-modal";
- root.innerHTML=`<div class="auto-lock-sheet" role="dialog" aria-modal="true">
-   <h3>Automatische Sperre</h3>
-   <p>BaseVault sperrt den Tresor automatisch, wenn innerhalb der gewählten Zeit keine Aktivität erkannt wird. Die Einstellung wird lokal gespeichert.</p>
-   <div class="auto-lock-options">
-    ${options.map(m=>`<button class="auto-lock-option ${m===current?"active":""}" onclick="setAutoLock(${m},this)">
-      <strong>${m===0?"Deaktiviert":m<60?m+" Minute"+(m===1?"":"n"):"1 Stunde"}</strong>
-      <small>${m===0?"Keine automatische Sperre":m<60?"Bei Inaktivität automatisch sperren":"Bei Inaktivität automatisch sperren"}</small>
-    </button>`).join("")}
+/* --- 15. Bausteine der Ansichten --------------------------------------- */
+function card(profile){
+ const initials=esc((profile.name||"?").trim().slice(0,2).toUpperCase());
+ const favorite=!!profile.favorite,active=profile.active!==false;
+ const favoriteLabel=favorite?"Favorit entfernen":"Als Favorit markieren";
+ return `<div class="card profile-card" role="button" tabindex="0" data-act="open-profile" data-key="open-profile" data-id="${esc(profile.id)}">
+   <div class="profile">
+    <div class="avatar">${initials}</div>
+    <div class="grow"><div class="name">${esc(profile.name)}</div><div class="sub">@${esc(profile.user)}</div><span class="pill"><span class="dot ${active?"":"off"}"></span> ${active?"AKTIV":"INAKTIV"}</span></div>
+    <div class="profile-actions">
+      <button type="button" class="smallbtn favorite-btn ${favorite?"is-favorite":""}" title="${favoriteLabel}" aria-label="${favoriteLabel}" data-act="toggle-fav" data-id="${esc(profile.id)}">${favorite?"★":"☆"}</button>
+      <button type="button" class="smallbtn" title="Profil bearbeiten" aria-label="Profil bearbeiten" data-act="open-editor" data-id="${esc(profile.id)}">⋮</button>
+    </div>
    </div>
-   <button class="ghost auto-lock-close" onclick="this.closest('.auto-lock-modal').remove()">Schließen</button>
- </div>`;
- document.body.appendChild(root);
- root.addEventListener("click",e=>{if(e.target===root)root.remove()});
+  </div>`;
 }
-async function setAutoLock(minutes,button){
- state.autoLockMinutes=Number(minutes)||0;
- if(state.key){
-   await persist();
-   startAutoLock();
- }
- document.querySelector(".auto-lock-modal")?.remove();
- renderApp();
+function incomeSection(profile){
+ const entries=[...(profile.incomes||[])].sort((a,b)=>String(b.date).localeCompare(String(a.date))||Number(b.createdAt||0)-Number(a.createdAt||0));
+ const expanded=state.incomeExpanded[profile.id]===true,total=incomeTotal(profile);
+ return `<div class="income-box"><div class="income-head"><div><div class="label">EINNAHMEN</div><div class="income-total">${money(total)}</div><div class="small">Dein Erlös (${payoutRateLabel(total)}): <b>${money(payoutTotal(total))}</b></div></div><button type="button" class="ghost income-add" data-act="open-income" data-id="${esc(profile.id)}">＋ Einnahme hinzufügen</button></div>${entries.length?`<button type="button" class="income-toggle" aria-expanded="${expanded}" data-act="toggle-income-list" data-id="${esc(profile.id)}"><span>${expanded?"Einzahlungen ausblenden":"Einzahlungen anzeigen"} <small>(${entries.length})</small></span><span class="chev">${expanded?"⌃":"⌄"}</span></button><div class="income-list${expanded?"":" collapsed"}">${entries.map(entry=>`<div class="income-row"><span><b>${money(entry.amount)}</b><small>${esc(entry.date)}${entry.note?` · ${esc(entry.note)}`:""}</small></span><button type="button" class="smallbtn" title="Einnahme bearbeiten" data-act="edit-income" data-profile="${esc(profile.id)}" data-id="${esc(entry.id)}">✎</button><button type="button" class="smallbtn danger" title="Einnahme löschen" data-act="delete-income" data-profile="${esc(profile.id)}" data-id="${esc(entry.id)}">×</button></div>`).join("")}</div>`:`<div class="small income-empty">Noch keine Einnahmen für diesen Account.</div>`}</div>`;
+}
+function editor(){
+ const profile=state.editing;
+ if(!profile)return "";
+ return `<div id="modal" class="modal open"><div class="sheet"><h2>${profile.id?"Profil bearbeiten":"Neues Profil"}</h2><div class="field"><div class="label">Profilname</div><input id="fName" class="input" value="${esc(profile.name)}" placeholder="z. B. Creator 01"></div><div class="field"><div class="label">Username / E-Mail</div><input id="fUser" class="input" value="${esc(profile.user)}"></div><div class="field"><div class="label">Passwort</div><input id="fPass" class="input" type="password" value="${esc(profile.pass)}"></div><div class="field"><div class="label">4based URL</div><input id="fUrl" class="input" value="${esc(profile.url||"https://4based.com/")}"></div><div class="field"><div class="label">Notizen</div><textarea id="fNotes" class="textarea">${esc(profile.notes)}</textarea></div>
+ <div class="actions">
+   <button type="button" class="ghost" data-act="toggle-editor-flag" data-flag="favorite">☆ Favorit: ${profile.favorite?"An":"Aus"}</button>
+   <button type="button" class="ghost" data-act="toggle-editor-flag" data-flag="active">● Status: ${profile.active===false?"Inaktiv":"Aktiv"}</button>
+ </div><div class="actions"><button type="button" class="ghost" data-act="close-editor">Abbrechen</button><button type="button" class="primary" data-act="save-profile">Speichern</button></div>${profile.id?`<div class="actions"><button type="button" class="ghost danger" data-act="delete-profile" data-id="${esc(profile.id)}">Profil löschen</button><button type="button" class="ghost" data-act="copy-text" data-value="${encodeURIComponent(profile.user||"")}">Username kopieren</button></div>`:""}</div></div>`;
+}
+function incomeEditor(){
+ const profile=state.profiles.find(item=>item.id===state.incomeProfileId);
+ if(!profile)return "";
+ return `<div id="incomeModal" class="modal open" data-backdrop-close="income"><div class="sheet"><div class="view-kicker">${esc(profile.name)}</div><h2>Neue Einnahme</h2><div class="field"><div class="label">Betrag</div><input id="incomeAmount" class="input" inputmode="decimal" type="number" min="0.01" step="0.01" placeholder="z. B. 47,50"></div><div class="field"><div class="label">Datum</div><input id="incomeDate" class="input" type="date" value="${toDateKey(new Date())}"></div><div class="field"><div class="label">Notiz (optional)</div><input id="incomeNote" class="input" placeholder="z. B. Chat / PPV / Trinkgeld"></div><div class="actions"><button type="button" class="ghost" data-act="close-income">Abbrechen</button><button type="button" class="primary" data-act="save-income">＋ Speichern</button></div></div></div>`;
+}
+function profileDetail(){
+ const profile=state.profileView;
+ if(!profile)return "";
+ const shown=profile.showPass?esc(profile.pass):"••••••••••••";
+ return `<div id="profileModal" class="modal open" data-backdrop-close="profile">
+   <div class="sheet profile-sheet">
+    <div class="detail-head">
+      <div class="avatar detail-avatar">${esc((profile.name||"?").trim().slice(0,2).toUpperCase())}</div>
+      <div class="grow"><div class="detail-title">${esc(profile.name)}</div><div class="sub">@${esc(profile.user)}</div><span class="pill"><span class="dot"></span> 4BASED</span></div>
+      <button type="button" class="iconbtn" data-act="close-profile" title="Schließen">×</button>
+    </div>
+    <div class="field"><div class="label">Username / E-Mail</div><div class="value"><span>${esc(profile.user)}</span><button type="button" title="Username kopieren" data-act="copy-text" data-value="${encodeURIComponent(profile.user||"")}">📋</button></div></div>
+    <div class="field"><div class="label">Passwort</div><div class="value password-value"><span id="detailPassword">${shown}</span><button id="togglePassBtn" type="button" title="${profile.showPass?"Passwort verbergen":"Passwort anzeigen"}" data-act="toggle-profile-pass">${profile.showPass?"🙈":"👁️"}</button><button id="copyPassBtn" type="button" title="Passwort kopieren" data-act="copy-profile-pass">📋 Kopieren</button></div></div>
+    <div class="field"><div class="label">4based</div><div class="value"><span>${esc(profile.url||"https://4based.com/")}</span><button type="button" title="4based öffnen" data-act="open-url">↗</button></div></div>
+    ${profile.notes?(()=>{const expanded=state.notesExpanded[profile.id]===true,count=profile.notes.trim().length;return `<div class="field"><div class="label">Notizen</div><button type="button" class="notes-toggle" aria-expanded="${expanded}" data-act="toggle-notes" data-id="${esc(profile.id)}"><span>${expanded?"Notizen ausblenden":"Notizen anzeigen"} <small>(${count} Zeichen)</small></span><span class="chev">${expanded?"⌃":"⌄"}</span></button><div class="notes-content${expanded?"":" collapsed"}"><div class="notes-box">${esc(profile.notes)}</div></div></div>`})():""}
+    ${incomeSection(profile)}
+    <div class="actions">
+      <button type="button" class="ghost ${profile.favorite?"favorite-detail":""}" data-act="toggle-fav-detail" data-id="${esc(profile.id)}">${profile.favorite?"★ Favorit":"☆ Favorit"}</button>
+      <button type="button" class="ghost" data-act="toggle-active-detail" data-id="${esc(profile.id)}">${profile.active===false?"● Inaktiv":"● Aktiv"}</button>
+    </div>
+    <div class="actions"><button type="button" class="ghost" data-act="close-profile">Schließen</button><button type="button" class="primary" data-act="edit-from-detail" data-id="${esc(profile.id)}">Bearbeiten</button></div>
+   </div>
+  </div>`;
 }
 
-function lock(){clearAutoLockTimer();state.key=null;state.profiles=[];state.editing=null;state.profileView=null;state.lastActivityAt=null;renderLogin()}
+/* --- 16. Ansichten ------------------------------------------------------ */
+function renderHeader(){
+ return `<header>
+   <div class="brandbox">
+    <div class="brandmark">🔐</div>
+    <div class="brandtext"><div class="brand">BASE<span class="accent">VAULT</span></div><div class="tagline">DEINE ACCOUNTS · SICHER · LOKAL</div></div>
+   </div>
+   <div class="head-actions">
+    <button class="iconbtn" type="button" title="Suche" data-act="focus-search">⌕</button>
+    <button class="iconbtn" type="button" title="Einstellungen" data-act="set-view" data-view="settings">⚙</button>
+    <button class="iconbtn lockbtn" type="button" title="Tresor sperren" aria-label="Tresor sperren" data-act="lock">×</button>
+   </div>
+  </header>`;
+}
+function emptyState(){
+ return `<div class="card empty" id="emptyState" hidden>
+    <div class="empty-visual"><div class="folder"></div></div>
+    <h2 id="emptyTitle">Noch keine Profile angelegt.</h2>
+    <p id="emptyText">Füge jetzt deinen ersten 4based-Account hinzu und behalte alles sicher an einem Ort.</p>
+    <button type="button" class="primary" id="emptyAction" data-act="open-editor">＋&nbsp; Erstes Profil hinzufügen</button>
+   </div>`;
+}
+function renderDashboard(){
+ return `
+   <div class="searchwrap"><span class="searchicon">⌕</span><input id="profileSearch" class="search" placeholder="Profil suchen..." value="${esc(state.query)}"></div>
+   <div class="filters">
+    ${FILTER_ITEMS.map(item=>`<button type="button" class="filter ${state.filter===item.id?"active":""}" data-act="set-filter" data-filter="${item.id}" data-filter-btn="${item.id}">${item.icon} &nbsp;${item.label}</button>`).join("")}
+   </div>
+   <section class="grid" id="profileList">
+    ${state.profiles.map(card).join("")}
+    ${emptyState()}
+   </section>
+   ${state.profiles.length?"":`<div class="feature-grid">
+    <div class="feature"><div class="fi">♢</div><strong>100% Lokal</strong><span>Keine Cloud</span></div>
+    <div class="feature"><div class="fi">♙</div><strong>Verschlüsselt</strong><span>AES-256-GCM</span></div>
+    <div class="feature"><div class="fi">◉</div><strong>Deine Daten</strong><span>Nur auf deinem Gerät</span></div>
+    <div class="feature"><div class="fi">♡</div><strong>Für Creator</strong><span>Mit ❤️ gemacht</span></div>
+   </div>`}`;
+}
+function viewStats(){
+ const stats=incomeStats();
+ const favorites=state.profiles.filter(profile=>!!profile.favorite).length;
+ const billingLabel=monthFormat.format(new Date(stats.selectedMonth+"-01T00:00:00"));
+ const billingDone=state.billingStatus[stats.selectedMonth]===true;
+ const rows=stats.rows.map(row=>`<div class="income-row"><span><b>${esc(row.profile.name)}</b><small>@${esc(row.profile.user)} · Gesamt ${money(row.total)} · ${esc(billingLabel)}: ${money(row.month)} · <b>She-X: ${row.rate}</b> · Auszahlung: ${money(row.payout)}</small></span><strong>${money(row.month)}</strong></div>`).join("");
+ return `
+  <section class="view-grid">
+   <div class="card view-hero"><div class="view-kicker">ÜBERSICHT</div><h2>Statistiken</h2><p>Account-Verwaltung und manuelles Einnahmen-Tracking kompakt auf einen Blick.</p></div>
+   <div class="stat-grid">
+    <div class="stat-card"><span>Gesamtumsatz</span><strong>${money(stats.total)}</strong><small>alle gespeicherten Einnahmen</small></div>
+    <div class="stat-card"><span>Heute</span><strong>${money(stats.today)}</strong><small>${stats.dayKey}</small></div>
+    <div class="stat-card"><span>Diese Woche</span><strong>${money(stats.week)}</strong><small>Montag bis heute</small></div>
+    <div class="stat-card"><span>Dieser Monat</span><strong>${money(stats.month)}</strong><small>${stats.monthPrefix}</small></div>
+    <div class="stat-card"><span>Dein Erlös</span><strong>${money(stats.payoutAll)}</strong><small>pro Account nach She-X-Umsatzstufe</small></div>
+    <div class="stat-card"><span>Profil</span><strong>${state.profiles.length}</strong><small>gespeicherte Accounts</small></div>
+    <div class="stat-card"><span>Favoriten</span><strong>${favorites}</strong><small>markierte Profile</small></div>
+   </div>
+   <div class="card" id="billingCard"><h3>Monatliche Abrechnung</h3><p class="small">Jeder Monat wird separat und je Account berechnet. Nach der She-X-Vergütungsstaffel sind es unter 3.000,00 € 20 %, ab 3.000,00 € 25 %. Der jeweilige Satz gilt für den einzelnen Account.</p><div class="field"><div class="label">Abrechnungsmonat</div><input id="billingMonth" class="input" type="month" value="${stats.selectedMonth}"></div><div class="stat-grid"><div class="stat-card"><span>Umsatz · ${esc(billingLabel)}</span><strong>${money(stats.billingGross)}</strong><small>nur dieser Monat</small></div><div class="stat-card"><span>Dein Erlös · je Account</span><strong>${money(stats.billingPayout)}</strong><small>20 % / 25 % je nach Account-Umsatz</small></div></div><div class="actions"><button type="button" class="ghost" data-act="toggle-billing" data-month="${esc(stats.selectedMonth)}">${billingDone?"☑ Abgerechnet":"☐ Als abgerechnet markieren"}</button><span class="small">${billingDone?"Dieser Monat ist als abgerechnet markiert.":"Noch nicht als abgerechnet markiert."}</span></div></div>
+   <div class="card"><h3>Zeitraum</h3><p class="small">Beliebigen Zeitraum für eine zusätzliche Umsatzprüfung auswählen.</p><div class="range-grid"><div class="field"><div class="label">Von</div><input id="rangeFrom" class="input" type="date" value="${esc(state.rangeFrom)}"></div><div class="field"><div class="label">Bis</div><input id="rangeTo" class="input" type="date" value="${esc(state.rangeTo)}"></div></div>${state.rangeFrom&&state.rangeTo?`<div class="stat-grid"><div class="stat-card"><span>Zeitraum-Umsatz</span><strong>${money(stats.rangeGross)}</strong><small>${esc(state.rangeFrom)} bis ${esc(state.rangeTo)}</small></div><div class="stat-card"><span>Dein Erlös · je Account</span><strong>${money(stats.rangePayout)}</strong><small>20 % / 25 % je nach Account-Umsatz</small></div></div>`:""}</div>
+   <div class="card"><h3>Einnahmen pro Account</h3><p class="small">${esc(billingLabel)} · Monatsumsatz je Account · Auszahlung automatisch nach Umsatzstufe</p>${rows||'<p class="small">Für diesen Monat sind noch keine Einnahmen erfasst.</p>'}</div>
+   <div class="card"><h3>Account-Aktivität</h3><p class="small">${favorites} Favoriten · ${state.profiles.filter(profile=>profile.active!==false).length} aktive Profile · Einnahmen werden ausschließlich lokal im verschlüsselten Vault gespeichert.${state.lastSavedAt?` · Letzte Speicherung: ${esc(stampFormat.format(new Date(state.lastSavedAt)))}`:""}</p></div>
+  </section>`;
+}
+function viewTools(){
+ return `
+  <section class="view-grid">
+   <div class="card view-hero"><div class="view-kicker">WERKZEUGE</div><h2>Tools</h2><p>Direkte Helfer für deinen täglichen Account-Workflow.</p></div>
+   <div class="tool-grid">
+    <button class="tool-card" data-act="open-editor"><span class="tool-icon">＋</span><strong>Profil hinzufügen</strong><small>Neuen Account sicher speichern</small></button>
+    <button class="tool-card" data-act="focus-search"><span class="tool-icon">⌕</span><strong>Account suchen</strong><small>Schnell einen Eintrag finden</small></button>
+    <button class="tool-card" data-act="export-vault"><span class="tool-icon">⇩</span><strong>Vault exportieren</strong><small>Verschlüsselte Sicherung erstellen</small></button>
+    <button class="tool-card" data-act="lock"><span class="tool-icon">🔒</span><strong>Tresor sperren</strong><small>Lokalen Tresor sofort schließen</small></button>
+   </div>
+   <div class="card"><h3>Workflow</h3><div class="tool-list">
+    <div>💬 <span><b>Chatter-Workspace</b><small>Accounts und Arbeitsnotizen bündeln</small></span></div>
+    <div>📊 <span><b>Umsatz-Tracking</b><small>Lokale Einnahmen und Performance erfassen</small></span></div>
+    <div>🧰 <span><b>Workflow-Helfer</b><small>Schnellzugriffe und Vorlagen für den Alltag</small></span></div>
+   </div></div>
+  </section>`;
+}
+function viewSettings(){
+ return `
+  <section class="view-grid">
+   <div class="card view-hero"><div class="view-kicker">KONFIGURATION</div><h2>Einstellungen</h2><p>BaseVault lokal an deinen Workflow anpassen.</p></div>
+   <div class="card settings-list">
+    <button data-act="show-auto-lock"><span>🔐</span><span><b>Automatische Sperre</b><small>${autoLockLabel()}</small></span><i>›</i></button>
+    <button data-act="show-change-pass"><span>🔑</span><span><b>Master-Passwort ändern</b><small>Neues Passwort für den Tresor festlegen</small></span><i>›</i></button>
+    <button data-act="export-vault"><span>💾</span><span><b>Vault-Backup</b><small>Verschlüsselte Sicherung exportieren</small></span><i>›</i></button>
+    <button data-act="show-recovery"><span>🔑</span><span><b>Recovery-Key anzeigen</b><small>Schlüssel anzeigen oder kopieren</small></span><i>›</i></button>
+    <button data-act="copy-current-recovery"><span>📋</span><span><b>Recovery-Key kopieren</b><small>Für einen sicheren externen Speicher</small></span><i>›</i></button>
+    <button data-act="export-recovery"><span>📄</span><span><b>Recovery-Key exportieren</b><small>Als Textdatei sichern</small></span><i>›</i></button>
+    <button data-act="rotate-recovery"><span>♻️</span><span><b>Recovery-Key neu erzeugen</b><small>Der alte Schlüssel wird ungültig</small></span><i>›</i></button>
+    <button data-act="show-about"><span>ℹ️</span><span><b>Über BaseVault</b><small>Lokale Offline-Version</small></span><i>›</i></button>
+   </div>
+   <div class="card danger-card"><h3>Sicherheit</h3><p class="small">Master-Passwort und verschlüsselte Daten bleiben lokal. Ein verlorenes Master-Passwort kann nicht wiederhergestellt werden.</p></div>
+  </section>`;
+}
+function viewContent(){
+ if(currentView==="stats")return viewStats();
+ if(currentView==="tools")return viewTools();
+ if(currentView==="settings")return viewSettings();
+ return "";
+}
 
-["pointerdown","keydown","touchstart","scroll"].forEach(evt=>{
- document.addEventListener(evt,()=>noteActivity(),{passive:true});
+/* --- 17. Renderer ------------------------------------------------------- */
+function renderApp(){
+ $("root").innerHTML=`
+ <main class="app">
+  ${renderHeader()}
+  ${currentView==="dashboard"?renderDashboard():viewContent()}
+ </main>
+
+ <button type="button" class="fab" title="Profil hinzufügen" data-act="open-editor">＋</button>
+
+ <nav class="bottom">
+  <div class="bottom-inner">
+   ${NAV_ITEMS.map(item=>`<button type="button" id="nav-${item.id}" class="nav" data-act="set-view" data-view="${item.id}"><span class="ni">${item.icon}</span>${item.label}</button>`).join("")}
+  </div>
+ </nav>
+ ${editor()}${profileDetail()}${incomeEditor()}`;
+ activateNav();
+ if(currentView==="dashboard")applyListFilter();
+}
+
+/* --- 18. Ereignis-Delegation (ein Listener für alle Aktionen) ---------- */
+const ACTIONS={
+ "set-view":element=>setView(element.dataset.view),
+ "focus-search":()=>focusSearch(),
+ "lock":()=>lock(),
+ "open-editor":element=>openEditor(element.dataset.id||""),
+ "close-editor":()=>closeEditor(),
+ "toggle-editor-flag":element=>toggleEditorFlag(element.dataset.flag,element),
+ "save-profile":()=>saveProfile(),
+ "delete-profile":element=>deleteProfile(element.dataset.id),
+ "copy-text":element=>copyText(decodeURIComponent(element.dataset.value||"")),
+ "set-filter":element=>setFilter(element.dataset.filter),
+ "open-profile":element=>openProfile(element.dataset.id),
+ "close-profile":()=>closeProfile(),
+ "toggle-fav":element=>toggleFavorite(element.dataset.id),
+ "toggle-fav-detail":element=>toggleFavorite(element.dataset.id,true),
+ "toggle-active-detail":element=>toggleActive(element.dataset.id,true),
+ "edit-from-detail":element=>{closeProfile();openEditor(element.dataset.id)},
+ "toggle-profile-pass":()=>toggleProfilePass(),
+ "copy-profile-pass":()=>copyProfilePass(),
+ "open-url":()=>openUrl(),
+ "toggle-notes":element=>toggleNotes(element.dataset.id),
+ "toggle-income-list":element=>toggleIncomeList(element.dataset.id),
+ "open-income":element=>openIncome(element.dataset.id),
+ "close-income":()=>closeIncome(),
+ "save-income":()=>saveIncome(),
+ "edit-income":element=>editIncome(element.dataset.profile,element.dataset.id),
+ "delete-income":element=>deleteIncome(element.dataset.profile,element.dataset.id),
+ "toggle-billing":element=>toggleBillingStatus(element.dataset.month),
+ "create-vault":()=>createVault(),
+ "unlock":()=>unlock(),
+ "show-login":()=>renderLogin(),
+ "show-recovery-reset":()=>showRecoveryReset(),
+ "reset-master":()=>resetMaster(),
+ "show-change-pass":()=>showChangeMasterPassword(),
+ "change-pass":()=>changeMasterPassword(),
+ "show-auto-lock":()=>showAutoLockSettings(),
+ "set-auto-lock":element=>setAutoLock(element.dataset.minutes),
+ "export-vault":()=>exportVault(),
+ "show-recovery":()=>showCurrentRecovery(),
+ "copy-current-recovery":()=>copyCurrentRecovery(),
+ "copy-recovery":element=>copyRecoveryButton(element),
+ "export-recovery":()=>exportRecovery(),
+ "rotate-recovery":()=>rotateRecovery(),
+ "show-about":()=>showAbout(),
+ "close-modal":element=>element.closest(".modal, .auto-lock-modal, .change-pass-modal")?.remove()
+};
+document.addEventListener("click",event=>{
+ const element=event.target instanceof Element?event.target:null;
+ if(!element)return;
+ const target=element.closest("[data-act]");
+ if(target){
+  const action=ACTIONS[target.dataset.act];
+  if(action){event.preventDefault();action(target,event);return}
+ }
+ if(!element.dataset.backdropClose)return;                                   // Klick auf den Hintergrund
+ if(element.dataset.backdropClose==="profile")closeProfile();
+ else if(element.dataset.backdropClose==="income")closeIncome();
+ else element.remove();
 });
-document.addEventListener("visibilitychange",()=>{
- if(document.visibilityState==="visible" && state.key && Number(state.autoLockMinutes)){
-   const ms=Number(state.autoLockMinutes)*60*1000;
-   if(Date.now()-(state.lastActivityAt||Date.now())>=ms){
-     lock();
-     alert(`BaseVault wurde nach ${autoLockLabel().replace(/^Nach /,"")} automatisch gesperrt.`);
-   }else{
-     scheduleAutoLock();
-   }
+document.addEventListener("input",event=>{
+ if(event.target.id==="profileSearch"){
+  state.query=event.target.value;
+  applyListFilter();
  }
 });
+document.addEventListener("change",event=>{
+ const id=event.target.id;
+ if(id==="billingMonth")setBillingMonth(event.target.value);
+ else if(id==="rangeFrom")setRange(event.target.value,fieldValue("rangeTo"));
+ else if(id==="rangeTo")setRange(fieldValue("rangeFrom"),event.target.value);
+});
+document.addEventListener("keydown",event=>{
+ if(event.key==="Enter"&&event.target.dataset?.enter){
+  ACTIONS[event.target.dataset.enter]?.();
+  return;
+ }
+ if(event.key!=="Enter"&&event.key!==" ")return;
+ const target=event.target;
+ if(!(target instanceof HTMLElement)||/^(BUTTON|INPUT|TEXTAREA|SELECT)$/.test(target.tagName))return;
+ const action=target.dataset.key&&ACTIONS[target.dataset.key];
+ if(action){event.preventDefault();action(target,event)}
+});
+for(const type of ["pointerdown","keydown","touchstart","scroll"])document.addEventListener(type,noteActivity,{passive:true});
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")checkAutoLock()});
 
-(async()=>{const v=await dbGet();v?renderLogin():renderSetup()})();
+/* --- 19. Start ---------------------------------------------------------- */
+(async()=>{
+ try{
+  const record=await dbGet();
+  record?renderLogin():renderSetup();
+ }catch(error){
+  $("root").innerHTML=`<div class="setup"><div class="card"><div class="brand">🔐 BaseVault</div><h2>Speicher nicht verfügbar</h2><p class="small">${esc(error?.message||"IndexedDB ist in diesem Browser nicht verfügbar.")}</p></div></div>`;
+ }
+})();
 </script>
 </body>
 </html>
